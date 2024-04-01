@@ -2,31 +2,25 @@ import {
   BsFillExclamationOctagonFill,
   BsPeopleFill,
   BsFileCodeFill,
-  BsLink45Deg,
   BsFillInfoCircleFill,
   BsPersonFill,
   BsDiscord,
   BsStack,
-  BsFillFileSlidesFill
-} from 'react-icons/bs';
-import {HiUserGroup} from 'react-icons/hi'
-import { PiCoinVerticalDuotone } from 'react-icons/pi';
-import Image from 'next/image';
-import sponsorsImg from './sponsors.png';
-import Link from 'next/link';
-import applicationQR from './application_qr_code.png';
-import CountdownTimer from './CountdownTimer';
-// import slides from './startup_sprint_slides.pdf'
+  BsFillFileSlidesFill,
+} from "react-icons/bs";
+import { HiUserGroup } from "react-icons/hi";
+import Image from "next/image";
+import sponsorsImg from "./sponsors.png";
 
 function StartupSprint2023() {
   return (
     <div>
-      <h1 className="text-4xl font-bold mb-4">Startup Sprint 2023</h1>
+      <h1 className="mb-4 text-4xl font-bold">Startup Sprint 2023</h1>
       <h2 className="text-2xl text-primary">Dare to Dream, Take the Leap</h2>
-      <p className="text-lg mb-8">
+      <p className="mb-8 text-lg">
         Are you ready to embark on an entrepreneurial journey like no other?
-        Virginia Tech's Entrepreneurship Club, in partnership with the Apex Center
-        for Entrepreneurs, presents{' '}
+        Virginia Tech&apos;s Entrepreneurship Club, in partnership with the Apex
+        Center for Entrepreneurs, presents{" "}
         <span className="text-secondary">Startup Sprint</span> – your chance to
         turn innovative ideas into reality in just one week!
       </p>
@@ -36,12 +30,12 @@ function StartupSprint2023() {
         Check this page regularly for updates and new information.
       </div>
 
-      <div className="shadow-lg border rounded-lg p-6 mb-10 lg:grid lg:grid-cols-2">
-        <div className='lg:w-10/12'>
+      <div className="mb-10 rounded-lg border p-6 shadow-lg lg:grid lg:grid-cols-2">
+        <div className="lg:w-10/12">
           <div className="w-full">
             <h2 className="text-3xl font-semibold">🚫 Registration Closed</h2>
             <a
-              href={'../../../startup_sprint_slides.pdf'}
+              href={"../../../startup_sprint_slides.pdf"}
               target="_blank"
               className="btn btn-outline btn-block mt-10"
             >
@@ -49,9 +43,9 @@ function StartupSprint2023() {
               Opening Ceremony Slides
             </a>
             <a
-              href={'../../../business_model_slides.pdf'}
+              href={"../../../business_model_slides.pdf"}
               target="_blank"
-              className="btn btn-outline btn-primary btn-block mt-10"
+              className="btn btn-primary btn-outline btn-block mt-10"
             >
               <BsFillFileSlidesFill className="text-3xl" />
               Business Model Workshop Slides
@@ -78,7 +72,7 @@ function StartupSprint2023() {
               href="https://eclubvt.notion.site/Mentor-Portal-fec6e0ee2360453390a8324741891300"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-block btn-primary text-black mt-10"
+              className="btn btn-primary btn-block mt-10 text-black"
             >
               <BsPeopleFill className="text-3xl" />
               Mentor Portal
@@ -87,7 +81,7 @@ function StartupSprint2023() {
               href="https://forms.gle/w73qwZefEFwXjiZj8"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-block btn-secondary text-black mt-10"
+              className="btn btn-secondary btn-block mt-10 text-black"
             >
               <HiUserGroup className="text-3xl" />
               Leadership Interest Form
@@ -95,7 +89,7 @@ function StartupSprint2023() {
           </div>
         </div>
 
-        <div className="lg:w-1/2 mt-10 lg:mt-0">
+        <div className="mt-10 lg:mt-0 lg:w-1/2">
           <h2 className="text-3xl font-semibold">📅 Event Dates</h2>
           <br />
 
@@ -103,8 +97,8 @@ function StartupSprint2023() {
             Application Deadline:
           </h3>
           <p className="text-xl">
-            Sunday November 5th{' '}
-            <span className="text-error font-bold">11:59PM</span>
+            Sunday November 5th{" "}
+            <span className="font-bold text-error">11:59PM</span>
           </p>
           <br />
 
@@ -112,9 +106,9 @@ function StartupSprint2023() {
             Kickoff and Opening Ceremony:
           </h3>
           <p className="text-xl">
-            Wednesday November 8th{' '}
-            <span className="text-primary font-bold">6PM to 8PM</span> at the Apex
-            Center
+            Wednesday November 8th{" "}
+            <span className="font-bold text-primary">6PM to 8PM</span> at the
+            Apex Center
           </p>
           <br />
 
@@ -122,26 +116,34 @@ function StartupSprint2023() {
             Friday Workshops
           </h3>
           <p className="text-xl">
-            Friday November 10th{' '}
-            <br />
+            Friday November 10th <br />
           </p>
           <br />
-          <p className='text-xl'>Meet some of the team members at Community Labs to ask questions about the Arweave network.</p>
-          <span className="text-error text-xl font-bold">12:00PM - 3:00PM</span>
-          <br /><br />
-          <p className="text-xl">Learn how to craft a business model in our business model workshop.</p>
-          <span className="text-error text-xl font-bold">4:00PM - 6:00PM</span>
-          <br /><br />
+          <p className="text-xl">
+            Meet some of the team members at Community Labs to ask questions
+            about the Arweave network.
+          </p>
+          <span className="text-xl font-bold text-error">12:00PM - 3:00PM</span>
+          <br />
+          <br />
+          <p className="text-xl">
+            Learn how to craft a business model in our business model workshop.
+          </p>
+          <span className="text-xl font-bold text-error">4:00PM - 6:00PM</span>
+          <br />
+          <br />
 
           <h3 className="text-2xl font-semibold text-secondary">
             Saturday Movie Night
           </h3>
           <p className="text-xl">
-            Saturday November 11th{' '}
+            Saturday November 11th <br />
+            Take a break from entreprenuering and come join us to watch the
+            Social Network.
             <br />
-            Take a break from entreprenuering and come join us to watch the Social Network.
-            <br />
-            <span className="text-error text-xl font-bold">8:00PM - 10:00PM</span>
+            <span className="text-xl font-bold text-error">
+              8:00PM - 10:00PM
+            </span>
           </p>
           <br />
 
@@ -149,8 +151,8 @@ function StartupSprint2023() {
             MVP Submission Deadline:
           </h3>
           <p className="text-xl">
-            Monday November 13th{' '}
-            <span className="text-error font-bold">8:00AM</span>
+            Monday November 13th{" "}
+            <span className="font-bold text-error">8:00AM</span>
           </p>
           <br />
 
@@ -163,9 +165,9 @@ function StartupSprint2023() {
       </div>
 
       <div className="flex flex-wrap">
-        <div className="w-full md:w-1/2 px-2 mb-4">
-          <div className="p-6 border shadow-lg rounded-lg h-full">
-            <h2 className="text-2xl font-bold mb-4 text-secondary">
+        <div className="mb-4 w-full px-2 md:w-1/2">
+          <div className="h-full rounded-lg border p-6 shadow-lg">
+            <h2 className="mb-4 text-2xl font-bold text-secondary">
               💡 What is Startup Sprint?
             </h2>
             <p className="text-xl">
@@ -177,49 +179,49 @@ function StartupSprint2023() {
             </p>
             <br />
             <p className="text-xl">
-              You will have one week to{' '}
-              <span className="text-secondary">identify a problem</span>, build a{' '}
-              <span className="text-secondary">product</span>, and form a{' '}
+              You will have one week to{" "}
+              <span className="text-secondary">identify a problem</span>, build
+              a <span className="text-secondary">product</span>, and form a{" "}
               <span className="text-secondary">business model</span> that you
               will present in front of a panel of judges.
             </p>
           </div>
         </div>
-        <div className="w-full md:w-1/2 px-2 mb-4">
-          <div className="p-6 border shadow-lg rounded-lg">
-            <h2 className="text-2xl font-bold mb-4 text-secondary">
+        <div className="mb-4 w-full px-2 md:w-1/2">
+          <div className="rounded-lg border p-6 shadow-lg">
+            <h2 className="mb-4 text-2xl font-bold text-secondary">
               🌟 Why Should You Join?
             </h2>
 
-            <div className="text-xl mt-4">
+            <div className="mt-4 text-xl">
               <span className="font-semibold text-primary">
                 Hands-On Experience:
-              </span>{' '}
-              You're going to be dropped into a fast-paced environment where
-              you'll have to identify a problem, deploy a solution, and craft a
-              business model.
+              </span>{" "}
+              You&apos;re going to be dropped into a fast-paced environment
+              where you&apos;ll have to identify a problem, deploy a solution,
+              and craft a business model.
             </div>
-            <div className="text-xl mt-4">
-              <span className="font-semibold text-primary">Workshops:</span>{' '}
+            <div className="mt-4 text-xl">
+              <span className="font-semibold text-primary">Workshops:</span>{" "}
               Learn business model creation and Arweave blockchain development
               from faculty and industry partners.
             </div>
-            <div className="text-xl mt-4">
+            <div className="mt-4 text-xl">
               <span className="font-semibold text-primary">
                 Skill Development:
-              </span>{' '}
+              </span>{" "}
               Learn to use hyper-modern technologies and apply them to a
               practical problem.
             </div>
-            <div className="text-xl mt-4">
-              <span className="font-semibold text-primary">Win $$$:</span>{' '}
-              Impress our panel of judges and secure capital. There is over{' '}
+            <div className="mt-4 text-xl">
+              <span className="font-semibold text-primary">Win $$$:</span>{" "}
+              Impress our panel of judges and secure capital. There is over{" "}
               <span className="text-secondary">$5000</span> in prize money!
             </div>
-            <div className="text-xl mt-4">
+            <div className="mt-4 text-xl">
               <span className="font-semibold text-primary">
                 Boost Your Resume:
-              </span>{' '}
+              </span>{" "}
               Add this exciting experience to your resume.
             </div>
           </div>
@@ -227,74 +229,79 @@ function StartupSprint2023() {
       </div>
 
       <div className="flex flex-wrap">
-        <div className="w-full md:w-1/2 px-2 mb-4">
-          <div className="p-6 border shadow-lg rounded-lg h-full">
-            <h2 className="text-2xl font-bold mb-4 text-secondary">
+        <div className="mb-4 w-full px-2 md:w-1/2">
+          <div className="h-full rounded-lg border p-6 shadow-lg">
+            <h2 className="mb-4 text-2xl font-bold text-secondary">
               Our Sponsors:
             </h2>
-            <Image className="lg:w-2/3" src={sponsorsImg} alt="Startup Sprint Sponsors" />
+            <Image
+              className="lg:w-2/3"
+              src={sponsorsImg}
+              alt="Startup Sprint Sponsors"
+            />
           </div>
         </div>
-        <div className="w-full md:w-1/2 px-2 mb-4">
-          <div className="p-6 border shadow-lg rounded-lg h-full">
-            <h2 className="text-2xl font-bold mb-4 text-secondary">FAQs</h2>
+        <div className="mb-4 w-full px-2 md:w-1/2">
+          <div className="h-full rounded-lg border p-6 shadow-lg">
+            <h2 className="mb-4 text-2xl font-bold text-secondary">FAQs</h2>
 
-            <div className="text-xl inline-block mb-4">
-              <h3 className="text-2xl text-primary font-bold">
-                Can I apply with a startup or product I'm already working on?
+            <div className="mb-4 inline-block text-xl">
+              <h3 className="text-2xl font-bold text-primary">
+                Can I apply with a startup or product I&apos;m already working
+                on?
               </h3>
-              <BsFillExclamationOctagonFill className="text-error text-2xl inline mr-4" />
+              <BsFillExclamationOctagonFill className="mr-4 inline text-2xl text-error" />
               No previous work may be done before the event. Any evidence of
               prior work will result in disqualification. You are free to funnel
               prize money into previous ventures, however. But your submissions
               must be developed during the event and no earlier.
             </div>
 
-            <div className="text-xl inline-block mb-4">
-              <h3 className="text-2xl text-primary font-bold">
+            <div className="mb-4 inline-block text-xl">
+              <h3 className="text-2xl font-bold text-primary">
                 Do I need a team to apply?
               </h3>
-              <BsPeopleFill className="text-error text-2xl inline mr-4" />
+              <BsPeopleFill className="mr-4 inline text-2xl text-error" />
               You do not need a team to participate, but you are encouraged to
               form teams of up to 4 people.
             </div>
 
-            <div className="text-xl inline-block mb-4">
-              <h3 className="text-2xl text-primary font-bold">
+            <div className="mb-4 inline-block text-xl">
+              <h3 className="text-2xl font-bold text-primary">
                 Do I need to know how to code?
               </h3>
-              <BsFileCodeFill className="text-error text-2xl inline mr-4" />
+              <BsFileCodeFill className="mr-4 inline text-2xl text-error" />
               No, you do not need to know how to code. You must still submit a
               product, however, and this could simply be a landing page made
               with Wix and a spreadsheet on your end.
             </div>
 
-            <div className="text-xl inline-block mb-4">
-              <h3 className="text-2xl text-primary font-bold">
+            <div className="mb-4 inline-block text-xl">
+              <h3 className="text-2xl font-bold text-primary">
                 Who should I contact if I have questions?
               </h3>
               <div>
-                <BsPersonFill className="text-error text-2xl inline mr-4" />
+                <BsPersonFill className="mr-4 inline text-2xl text-error" />
                 ebenezer@vt.edu
               </div>
               <div>
-                <BsPersonFill className="text-error text-2xl inline mr-4" />
+                <BsPersonFill className="mr-4 inline text-2xl text-error" />
                 htsours@vt.edu
               </div>
               <div>
-                <BsPersonFill className="text-error text-2xl inline mr-4" />
+                <BsPersonFill className="mr-4 inline text-2xl text-error" />
                 samuelr20@vt.edu
               </div>
               <div>
-                <BsPersonFill className="text-error text-2xl inline mr-4" />
+                <BsPersonFill className="mr-4 inline text-2xl text-error" />
                 mbutler23@vt.edu
               </div>
               <div>
-                <BsPersonFill className="text-error text-2xl inline mr-4" />
+                <BsPersonFill className="mr-4 inline text-2xl text-error" />
                 jeremiahhohn@vt.edu
               </div>
               <div>
-                <BsPersonFill className="text-error text-2xl inline mr-4" />
+                <BsPersonFill className="mr-4 inline text-2xl text-error" />
                 brodyemery11@vt.edu
               </div>
             </div>
