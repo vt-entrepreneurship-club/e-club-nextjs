@@ -7,6 +7,7 @@ import marketing from './marketing.png'
 import pitching from './pitching.png'
 import ventureWeekendFlyer from '../events/venture-weekend.jpg'
 import showcaseFlyer from '../events/venture-weekend-startup-showcase.png'
+import { RiArrowDropRightLine } from "react-icons/ri";
 
 const workshops = [
     {
@@ -61,12 +62,60 @@ function VentureWeekend() {
             Virginia Tech's Entrepreneurship Club is hosting Venture Weekend from April 19th to the 21st. 
             This event is open to all students and will be a great opportunity to learn about entrepreneurship and 
             meet other students interested in startups. Venture Weekend will feature a series of workshops, activities,
-            and demos where students will present their startups and the progress they've been making.
+            and a showcase where students will present their startups and the progress they've been making.
           </p>
 
-          <h3 className="text-xl text-blue-300 font-bold my-10">Friday April 19th - Sunday April 21st</h3>
 
-          {/* <h3 className="text-xl font-bold my-10 text-accent">Itinerary</h3> */}
+          <h2 className="text-xl text-[#F78B50] font-bold mt-10 mb-6">Location: Apex Center</h2>
+          <div className="font-semibold text-lg">432 N Main St #200, Blacksburg, VA 24060</div>
+
+          <h2 className="text-xl text-blue-300 font-bold mt-10 mb-6">Itinerary:</h2>
+
+          <h3 className="text-lg text-secondary font-bold">Friday April 19th: </h3>
+          <div className="text-[#F78B50] font-semibold flex items-center"> 
+            <RiArrowDropRightLine className='text-4xl'/> 
+            Keynote Speaker 12pm
+          </div>
+          <br />
+
+          <h3 className="text-lg text-secondary font-bold">Saturday April 20th:</h3>
+          <div className="text-[#F78B50] font-semibold flex items-center"> 
+            <RiArrowDropRightLine className='text-4xl'/> 
+            Startup Showcase 12pm
+          </div>
+          <div className="text-[#F53EA8] font-semibold flex items-center"> 
+            <RiArrowDropRightLine className='text-4xl'/> 
+            UX Design Workshop 2pm
+          </div>
+          <div className="text-[#d579ff] font-semibold flex items-center"> 
+            <RiArrowDropRightLine className='text-4xl'/> 
+            Full Stack Coding Workshop 3:30pm
+          </div>
+          <br />
+
+          <h3 className="text-lg text-secondary font-bold">Sunday April 21st: </h3>
+
+          <div className="text-[#F78B50] font-semibold flex items-center"> 
+            <RiArrowDropRightLine className='text-4xl'/> 
+            Marketing Workshop 12pm
+          </div>
+          
+          <div className="text-[#F53EA8] font-semibold flex items-center"> 
+            <RiArrowDropRightLine className='text-4xl'/> 
+            Pitching Workshop 1pm
+          </div>
+          
+          <div className="text-[#d579ff] font-semibold flex items-center"> 
+            <RiArrowDropRightLine className='text-4xl'/> 
+            Pitch Competition 2pm
+          </div>
+          
+          <div className="text-[#79baff] font-semibold flex items-center"> 
+            <RiArrowDropRightLine className='text-4xl'/> 
+            Distribute Prizes 4pm
+          </div>
+          
+
             
             <a href='https://forms.gle/wL4aNiZv875HszhUA' target='_blank' className="btn-block btn text-black bg-gradient-to-r from-[#F97316] to-purple-500 float-right mt-10 mb-20">Register</a>
         </div>
