@@ -49,8 +49,8 @@ function VentureWeekend() {
 
         <div className='lg:w-[45%]'>
           <div className='float-right lg:flex'>
-            <Image className='float-right mb-10 lg:mr-10' src={ventureWeekendFlyer}></Image>
-            <Image className='float-right mb-10 lg:mr-10' src={showcaseFlyer}></Image>
+            <Image className='float-right mb-10 lg:mr-10' src={ventureWeekendFlyer} alt={''}></Image>
+            <Image className='float-right mb-10 lg:mr-10' src={showcaseFlyer} alt={''}></Image>
           </div>
         </div>
 
