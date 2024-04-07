@@ -7,7 +7,7 @@ import marketing from './marketing.png'
 import pitching from './pitching.png'
 import ventureWeekendFlyer from '../events/venture-weekend.jpg'
 import showcaseFlyer from '../events/venture-weekend-startup-showcase.png'
-import { RiArrowDropRightLine } from "react-icons/ri";
+import { VscTriangleRight } from "react-icons/vsc";
 
 const workshops = [
     {
@@ -72,52 +72,52 @@ function VentureWeekend() {
           <h2 className="text-xl text-blue-300 font-bold mt-10 mb-6">Itinerary:</h2>
 
           <h3 className="text-lg text-secondary font-bold">Friday April 19th: </h3>
-          <div className="text-[#F78B50] font-semibold flex items-center"> 
-            <RiArrowDropRightLine className='text-4xl'/> 
+          <div className="text-white my-3 font-semibold flex items-center"> 
+            <VscTriangleRight className='text-lg'/> 
             Keynote Speaker 12pm
           </div>
           <br />
 
           <h3 className="text-lg text-secondary font-bold">Saturday April 20th:</h3>
-          <div className="text-[#F78B50] font-semibold flex items-center"> 
-            <RiArrowDropRightLine className='text-4xl'/> 
+          <div className="text-white my-3 font-semibold flex items-center"> 
+            <VscTriangleRight className='text-lg'/> 
             Startup Showcase 12pm
           </div>
-          <div className="text-[#F53EA8] font-semibold flex items-center"> 
-            <RiArrowDropRightLine className='text-4xl'/> 
+          <div className="text-white my-3 font-semibold flex items-center"> 
+            <VscTriangleRight className='text-lg'/> 
             UX Design Workshop 2pm
           </div>
-          <div className="text-[#d579ff] font-semibold flex items-center"> 
-            <RiArrowDropRightLine className='text-4xl'/> 
+          <div className="text-white my-3 font-semibold flex items-center"> 
+            <VscTriangleRight className='text-lg'/> 
             Full Stack Coding Workshop 3:30pm
           </div>
           <br />
 
           <h3 className="text-lg text-secondary font-bold">Sunday April 21st: </h3>
 
-          <div className="text-[#F78B50] font-semibold flex items-center"> 
-            <RiArrowDropRightLine className='text-4xl'/> 
+          <div className="text-white my-3 font-semibold flex items-center"> 
+            <VscTriangleRight className='text-lg'/> 
             Marketing Workshop 12pm
           </div>
           
-          <div className="text-[#F53EA8] font-semibold flex items-center"> 
-            <RiArrowDropRightLine className='text-4xl'/> 
+          <div className="text-white my-3 font-semibold flex items-center"> 
+            <VscTriangleRight className='text-lg'/> 
             Pitching Workshop 1pm
           </div>
           
-          <div className="text-[#d579ff] font-semibold flex items-center"> 
-            <RiArrowDropRightLine className='text-4xl'/> 
+          <div className="text-white my-3 font-semibold flex items-center"> 
+            <VscTriangleRight className='text-lg'/> 
             Pitch Competition 2pm
           </div>
           
-          <div className="text-[#79baff] font-semibold flex items-center"> 
-            <RiArrowDropRightLine className='text-4xl'/> 
+          <div className="text-white my-3 font-semibold flex items-center"> 
+            <VscTriangleRight className='text-lg'/> 
             Distribute Prizes 4pm
           </div>
           
 
             
-            <a href='https://forms.gle/wL4aNiZv875HszhUA' target='_blank' className="btn-block btn text-black bg-gradient-to-r from-[#F97316] to-purple-500 float-right mt-10 mb-20">Register</a>
+            <a href='https://forms.gle/wL4aNiZv875HszhUA' target='_blank' className="btn-block btn text-white bg-gradient-to-r from-[#F97316] to-purple-500 float-right mt-10 mb-20">Register</a>
         </div>
 
       </div>
