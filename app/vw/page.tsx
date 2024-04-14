@@ -74,7 +74,7 @@ function VentureWeekend() {
           <h3 className="text-lg text-secondary font-bold">Friday April 19th: </h3>
           <div className="text-white my-3 font-semibold flex items-center"> 
             <VscTriangleRight className='text-lg'/> 
-            Keynote Speaker 12pm
+            Keynote Speaker 12pm - Mike Abbot
           </div>
           <br />
 
