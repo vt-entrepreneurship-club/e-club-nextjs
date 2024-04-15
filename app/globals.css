@@ -55,9 +55,9 @@ h1,h2 h3{
   transform: translate(-50%, -50%);
 }
 
-img{
+/* img{
   border-radius: 15px;
-}
+} */
 
 .border{
   border: 1px solid #00a6e2;
@@ -85,4 +85,8 @@ background: #00a6e2 ;
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
 background: #00a6e2;
+}
+
+.VWBackground {
+  background-image: url('./vw/background.png');
 }
