@@ -11,6 +11,7 @@ import { VscTriangleRight } from "react-icons/vsc";
 import ventureWeekendLogo from './venture-weekend-logo.png'
 import mikeAbbott from './mike-abbott.png'
 import { FaCircleExclamation } from "react-icons/fa6";
+import prizeMoney from './prize-money.png'
 
 function VentureWeekend() {
 
@@ -22,7 +23,7 @@ function VentureWeekend() {
   }, []);
 
   return (
-    <div className='p-10'>
+    <div>
       <Image className='mx-auto mb-12' src={ventureWeekendLogo} alt='venture weekend'></Image>
       <a href='https://forms.gle/wL4aNiZv875HszhUA' target='_blank' className="btn-block btn text-white bg-gradient-to-r from-[#F97316] to-purple-500 float-right mt-10 mb-20">Register</a>
         
@@ -43,9 +44,9 @@ function VentureWeekend() {
           <div className='border-2 border-secondary rounded-lg mt-10'>
             <h2 className="text-2xl text-secondary font-bold mt-6 mx-auto w-fit">Friday April 19th: </h2>
             <div className="text-2xl font-bold text-secondary w-fit mx-auto mt-2">12pm</div>
-            <Image className='lg:w-1/4 rounded-full border-purple-500 border-8 mx-auto my-10' src={mikeAbbott} alt='Mike Abbott'></Image>
+            <Image className='lg:w-1/4 w-10/12 rounded-full border-secondary border-4 mx-auto my-10' src={mikeAbbott} alt='Mike Abbott'></Image>
 
-            <p className="text-lg mb-8 text-white mx-auto w-1/2 text-center">
+            <p className="text-lg mb-8 text-white mx-auto lg:w-1/2 text-center">
               Come meet our keynote speaker Mike Abbott. Mike has worked with Fortune 500 companies, startups, and government
               agencies. He will be joining us this Friday
               to discuss startups, marketing,
@@ -53,95 +54,68 @@ function VentureWeekend() {
             </p>  
           </div>
 
+          <div className='mt-10 bg-gradient-to-b from-orange-400 to-purple-500 py-4 rounded-md'>
+            <h2 className="text-2xl text-black font-bold mb-2 mx-auto w-fit">Saturday April 20th: </h2>
 
-          <div>
+            <h3 className="text-2xl text-black font-bold mx-auto w-fit">Startup Showcase - 12pm</h3>
+            <p className="text-lg mb-8 text-black mx-auto lg:w-1/2 px-2 text-center mt-4">
+              Meet the VT students
+              building apps, startups,
+              and businesses. 
+            </p> 
 
-            <div className='mt-10 bg-gradient-to-b from-orange-400 to-purple-500 py-4'>
-              <h2 className="text-2xl text-black font-bold mb-2 mx-auto w-fit">Saturday April 20th: </h2>
+            <div className="border-b border-2 border-black"></div>
 
-              <h3 className="text-2xl text-purple-900 font-bold mx-auto w-fit">Startup Showcase - 12pm</h3>
-              <p className="text-lg mb-8 text-black mx-auto w-1/2 text-center mt-4">
-                Meet the VT students
-                building apps, startups,
-                and businesses. 
-              </p> 
+            <h3 className="text-2xl text-black font-bold mx-auto w-fit mt-10">UI / UX Design Workshop - 2pm</h3>
+            <p className="text-lg mb-8 text-black mx-auto lg:w-1/2 px-2 text-center mt-4">
+              Learn the skills and tools to design apps and websites like a professional.
+            </p>
 
-              <div className="border-b border-2 border-black"></div>
+            <div className="border-b border-2 border-black"></div>
 
-              <h3 className="text-2xl text-purple-900 font-bold mx-auto w-fit mt-10">UI / UX Design Workshop - 2pm</h3>
-              <p className="text-lg mb-8 text-black mx-auto w-1/2 text-center mt-4">
-                Learn the skills and tools to design apps and websites like a professional.
-              </p>
+            <h3 className="text-2xl text-black font-bold text-center mx-auto w-fit mt-10">Full Stack Development Workshop - 2pm</h3>
+            <p className="text-lg mb-8 text-black mx-auto lg:w-1/2 px-2 text-center mt-4">
+              Learn high value skills to code an app from scratch and level up your resume! 
+              <div className='text-center items-center flex mx-auto w-fit mt-4'>
+                <FaCircleExclamation className='text-2xl' />
+                <span className='ml-3 text-lg font-bold'>NO CODING EXPERIENCE REQUIRED</span>
+              </div>
+            </p>
 
-              <div className="border-b border-2 border-black"></div>
+          </div>
 
-              <h3 className="text-2xl text-purple-900 font-bold mx-auto w-fit mt-10">Full Stack Development Workshop - 2pm</h3>
-              <p className="text-lg mb-8 text-black mx-auto w-1/2 text-center mt-4">
-                Learn high value skills to code an app from scratch and level up your resume! 
-                <div className='text-center items-center flex mx-auto w-fit mt-4'>
-                  <FaCircleExclamation className='text-2xl' />
-                  <span className='ml-3 text-lg font-bold'>NO CODING EXPERIENCE REQUIRED</span>
-                </div>
-              </p>
+          <div className='bg-gradient-to-b from-blue-300 to-slate-400 py-10 mt-14'>
 
-            </div>
+            <h2 className="text-2xl text-black font-bold mb-6 mx-auto w-fit">Sunday April 21th: </h2>
 
+            <h3 className="text-2xl text-black font-bold mx-auto w-fit">Marketing Workshop - 12pm</h3>
+            <p className="text-lg mb-8 text-black mx-auto lg:w-1/2 px-2 text-center mt-4">
+              Learn how to market your startup and get your first customers.
+            </p> 
+
+
+            <div className="border-b border-2 border-black"></div>
+
+            <h3 className="text-2xl text-black font-bold mx-auto w-fit mt-8">Pitching Workshop - 1pm</h3>
+            <p className="text-lg mb-8 text-black mx-auto lg:w-1/2 px-2 text-center mt-4">
+              Learn how to sell your idea to investors.
+            </p>
+
+
+            <div className="border-b border-2 border-black"></div>
+
+            <h3 className="text-2xl text-black font-bold mx-auto w-fit mt-8">Pitch Competition - 12pm</h3>
+            <p className="text-lg mb-8 text-black mx-auto lg:w-1/2 px-2 text-center mt-4">
+              Pitch your ideas to a panel of judges with the chance to win
+            </p>
+            <Image className='mx-auto w-10/12 lg:w-auto' src={prizeMoney} alt='Venture Weekend Pitch Competition'></Image>  
           </div>
 
           <br />
 
-          <h3 className="text-lg text-secondary font-bold">Saturday April 20th:</h3>
-          <div className="text-white my-3 font-semibold flex items-center"> 
-            <VscTriangleRight className='text-lg'/> 
-            Startup Showcase 12pm
-          </div>
-          <div className="text-white my-3 font-semibold flex items-center"> 
-            <VscTriangleRight className='text-lg'/> 
-            UX Design Workshop 2pm
-          </div>
-          <div className="text-white my-3 font-semibold flex items-center"> 
-            <VscTriangleRight className='text-lg'/> 
-            Full Stack Coding Workshop 3:30pm
-          </div>
-          <br />
-
-          <h3 className="text-lg text-secondary font-bold">Sunday April 21st: </h3>
-
-          <div className="text-white my-3 font-semibold flex items-center"> 
-            <VscTriangleRight className='text-lg'/> 
-            Marketing Workshop 12pm
-          </div>
           
-          <div className="text-white my-3 font-semibold flex items-center"> 
-            <VscTriangleRight className='text-lg'/> 
-            Pitching Workshop 1pm
-          </div>
-          
-          <div className="text-white my-3 font-semibold flex items-center"> 
-            <VscTriangleRight className='text-lg'/> 
-            Pitch Competition 2pm
-          </div>
-          
-          <div className="text-white my-3 font-semibold flex items-center"> 
-            <VscTriangleRight className='text-lg'/> 
-            Distribute Prizes 4pm
-          </div>
-          
-
-            
         </div>
-      <div className="lg:grid lg:grid-cols-2">
-
-        {/* <div className='lg:w-[45%]'>
-          <div className='float-right lg:flex'>
-            <Image className='float-right mb-10 lg:mr-10' src={ventureWeekendFlyer} alt={''}></Image>
-            <Image className='float-right mb-10 lg:mr-10' src={showcaseFlyer} alt={''}></Image>
-          </div>
-        </div> */}
-
-        
-
-      </div>
+      
 
     </div>
   )
