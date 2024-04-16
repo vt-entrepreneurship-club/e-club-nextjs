@@ -73,7 +73,7 @@ function VentureWeekend() {
 
             <div className="border-b border-2 border-black"></div>
 
-            <h3 className="text-2xl text-black font-bold text-center mx-auto w-fit mt-10">Full Stack Development Workshop - 2pm</h3>
+            <h3 className="text-2xl text-black font-bold text-center mx-auto w-fit mt-10">Full Stack Development Workshop - 3:30pm</h3>
             <p className="text-lg mb-8 text-black mx-auto lg:w-1/2 px-2 text-center mt-4">
               Learn high value skills to code an app from scratch and level up your resume! 
               <div className='text-center items-center flex mx-auto w-fit mt-4'>
@@ -113,6 +113,8 @@ function VentureWeekend() {
 
           <br />
 
+
+          <div className=" p-10"></div>
           
         </div>
       
