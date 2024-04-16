@@ -84,7 +84,7 @@ function VentureWeekend() {
 
           </div>
 
-          <div className='bg-gradient-to-b from-blue-300 to-slate-400 py-10 mt-14'>
+          <div className='bg-gradient-to-b from-[#DFF6EC] to-[#45CAF1] py-10 mt-14'>
 
             <h2 className="text-2xl text-black font-bold mb-6 mx-auto w-fit">Sunday April 21th: </h2>
 
