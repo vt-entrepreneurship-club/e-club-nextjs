@@ -96,7 +96,7 @@ function VentureWeekend() {
 
             <div className="border-b border-2 border-black"></div>
 
-            <h3 className="text-2xl text-black font-bold mx-auto w-fit mt-8">Pitching Workshop - 1pm</h3>
+            <h3 className="text-2xl text-black font-bold mx-auto w-fit mt-8">Pitching Workshop - 2pm</h3>
             <p className="text-lg mb-8 text-black mx-auto lg:w-1/2 px-2 text-center mt-4">
               Learn how to sell your idea to investors.
             </p>
@@ -104,7 +104,7 @@ function VentureWeekend() {
 
             <div className="border-b border-2 border-black"></div>
 
-            <h3 className="text-2xl text-black font-bold mx-auto w-fit mt-8">Pitch Competition - 2:30pm</h3>
+            <h3 className="text-2xl text-black font-bold mx-auto w-fit mt-8">Pitch Competition - 3:30pm</h3>
             <p className="text-lg mb-8 text-black mx-auto lg:w-1/2 px-2 text-center mt-4">
               Pitch your ideas to a panel of judges with the chance to win
             </p>
