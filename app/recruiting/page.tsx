@@ -6,6 +6,7 @@ import cap1 from '../assets/company logos/cap1.png';
 import kogi from '../assets/company logos/kogi.png';
 import gartner from '../assets/company logos/gartner.png';
 import Image from "next/image";
+import NewsletterSignup from "../components/NewsletterSignup";
 
 export const metadata = {
   title: "Join Our Team",
@@ -85,6 +86,8 @@ function RecruitmentPage() {
         <div className="w-fit mx-auto text-red-400 font-medium text-xl text-center">
             Applications open <span className="font-bold">Wednesday September 4th</span>
         </div>
+        <div className="text-white text-center mx-auto w-fit mt-6">Signup for our newsletter to get alerts and information about recruiting</div>
+        <NewsletterSignup></NewsletterSignup>
       </div>
 
       <div className="text-2xl text-secondary font-semibold mx-auto w-fit text-center">Our leadership members have 100% job placement.</div>
