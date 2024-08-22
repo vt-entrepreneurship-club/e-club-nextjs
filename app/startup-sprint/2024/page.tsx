@@ -28,7 +28,9 @@ function page() {
       />
 
       <div className="w-fit mx-auto mb-10">
-        <button className="btn btn-primary blue-glow bg-gradient-to-r from-fuchsia-600 to-cyan-400 mx-auto text-[#272E3F] font-semibold text-xl hover:text-white">Register</button>
+        <a href='https://forms.gle/pFcTMAD8rrgo7ZpeA' 
+        target="_blank"
+        className="btn btn-primary blue-glow bg-gradient-to-r from-fuchsia-600 to-cyan-400 mx-auto text-[#272E3F] font-semibold text-xl hover:text-white">Register</a>
       </div>
 
       <div className="lg:grid lg:grid-cols-2">
