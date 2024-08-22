@@ -32,7 +32,7 @@ const roles = [
     allowing you to lead or contribute to various projects. Our structured hierarchy supports 
     upward mobility, offering clear paths towards executive positions. 
     If you want to join a small, kick-ass team who are trying 
-    to build up the next generation of Entrepreneurs, then read on.`,
+    to build up the next generation of entrepreneurs, then read on.`,
     responsibilities: [
       "Capture high-quality photos and videos at events hosted by E-Club.",
       "Create and produce engaging short-form and long-form content for our social media platforms.",
@@ -107,7 +107,7 @@ function RecruitmentPage() {
 
       <div className="p-4 lg:px-20 border border-red-400 rounded-lg mb-10 w-fit mx-auto">
         <div className="w-fit mx-auto text-red-400 font-medium text-xl text-center">
-            Applications open <span className="font-bold">Wednesday September 4th</span>
+            Applications open <span className="font-bold">Thursday September 5th</span>
         </div>
         <div className="text-white text-center mx-auto w-fit mt-6">Signup for our newsletter to get alerts and information about recruiting</div>
         <NewsletterSignup></NewsletterSignup>
