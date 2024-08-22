@@ -86,3 +86,9 @@ background: #00a6e2;
 .VWBackground {
   background-image: url('./vw/background.png');
 }
+
+.blue-glow{
+  box-shadow: 1px -4px 41px -16px rgba(55,236,252,0.75);
+-webkit-box-shadow: 1px -4px 41px -16px rgba(55,236,252,0.75);
+-moz-box-shadow: 1px -4px 41px -16px rgba(55,236,252,0.75);
+}

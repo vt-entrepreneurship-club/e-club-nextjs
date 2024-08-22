@@ -2,7 +2,16 @@
 "use client";
 import React, { useState, useEffect } from "react";
 
-const CountdownTimer = () => {
+const CountdownTimer = (
+  {
+    eventDate,
+    className
+  } : 
+  {
+    eventDate: string,
+    className: string
+  }
+) => {
   const [timeLeft, setTimeLeft] = useState<{
     days: number;
     hours: number;
@@ -13,9 +22,10 @@ const CountdownTimer = () => {
   useEffect(() => {
     const calculateTimeLeft = () => {
       let now = new Date();
-      let eventDate = new Date("2023-11-05T23:59:00").getTime(); // November 5th 11:59pm
+      // let eventDate = new Date("2023-11-05T23:59:00").getTime(); // November 5th 11:59pm
+      let formattedEventDate = new Date(eventDate).getTime()
 
-      let diff = eventDate - now.getTime();
+      let diff = formattedEventDate - now.getTime();
 
       const daysLeft = Math.floor(diff / (1000 * 60 * 60 * 24));
       const hoursLeft = Math.floor(
@@ -39,20 +49,22 @@ const CountdownTimer = () => {
   }, []);
 
   return (
-    <div className="mt-4 rounded-lg border bg-base-200 p-4 lg:w-3/4">
-      <span className="text-xl font-bold text-error">
-        {timeLeft.days} days{" "}
-      </span>
-      <span className="text-xl font-bold text-error">
-        {timeLeft.hours} hours{" "}
-      </span>
-      <span className="text-xl font-bold text-error">
-        {timeLeft.minutes} minutes{" "}
-      </span>
-      <span className="text-xl font-bold text-error">
-        {timeLeft.seconds} seconds{" "}
-      </span>
-      <span className="text-xl font-bold"> left to apply</span>
+    <div className={`text-center mt-4 rounded-lg border bg-base-200 p-4 lg:w-fit mx-auto ${className}`}>
+      <div className="mx-auto w-fit">
+        <span className="text-lg mx-2 font-bold">
+          {timeLeft.days} days{" "}
+        </span>
+        <span className="text-lg mx-2 font-bold">
+          {timeLeft.hours} hours{" "}
+        </span>
+        <span className="text-lg mx-2 font-bold">
+          {timeLeft.minutes} minutes{" "}
+        </span>
+        <span className="text-lg mx-2 font-bold">
+          {timeLeft.seconds} seconds{" "}
+        </span>
+        <span className="text-lg mx-2 font-bold text-gray-200"> left to apply</span>
+      </div>
     </div>
   );
 };
