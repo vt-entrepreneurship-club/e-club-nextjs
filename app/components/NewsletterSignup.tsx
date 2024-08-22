@@ -14,7 +14,7 @@ function NewsletterSignup() {
         <div id="mc_embed_signup_scroll">
           <div className="mc-field-group">
             <label htmlFor="mce-EMAIL">
-              Email Address <span className="asterisk">*</span>
+              {/* Email Address <span className="asterisk">*</span> */}
             </label>
             <input
               type="email"

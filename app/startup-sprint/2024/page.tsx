@@ -1,6 +1,6 @@
 import React from "react";
 import CountdownTimer from "../../components/CountdownTimer";
-import StartupSprintLogo from "./startup sprint logo.png";
+import StartupSprintLogo from "./startup sprint logo glow.png";
 import Image from "next/image";
 import { FaMoneyBill } from "react-icons/fa";
 import {
@@ -28,11 +28,11 @@ function page() {
       />
 
       <div className="w-fit mx-auto mb-10">
-        <button className="btn btn-primary mx-auto text-black font-normal">Register</button>
+        <button className="btn btn-primary blue-glow bg-gradient-to-r from-fuchsia-600 to-cyan-400 mx-auto text-[#272E3F] font-semibold text-xl hover:text-white">Register</button>
       </div>
 
       <div className="lg:grid lg:grid-cols-2">
-        <div className="border border-cyan-300 bg-[#F444FF] -400 rounded-md border-2 p-4 w-[94%] mx-auto mt-10">
+        <div className="border-0 bg-[#F444FF] bg-gradient-to-b from-blue-500 to-cyan-300 rounded-md blue-glow p-4 w-[94%] mx-auto mt-10">
           <div className="text-2xl text-base-100 font-bold">
             💡 What is Startup Sprint?
           </div>
@@ -50,13 +50,13 @@ function page() {
           </div>
         </div>
 
-        <div className="border border-pink-500 bg-cyan-300 rounded-md border-2 p-4 w-[94%] mx-auto mt-10">
+        <div className="border-0 bg-gradient-to-b from-blue-500 to-cyan-300 rounded-md blue-glow p-4 w-[94%] mx-auto mt-10">
             <h2 className="mb-4 text-2xl font-bold text-base-100">
               🌟 Why Should You Join?
             </h2>
 
             <div className="mt-4 text-xl text-black">
-              <div className="font-bold text-purple-900">
+              <div className="font-bold text-black">
                 You'll get hands-on experience:
               </div>
               You&apos;re going to be dropped into a fast-paced environment
@@ -64,18 +64,18 @@ function page() {
               and craft a business model.
             </div>
             <div className="mt-4 text-xl text-black">
-              <div className="font-bold text-purple-900">
+              <div className="font-bold text-black">
               You'll level up your skills:
               </div>
               Learn to use hyper-modern technologies and apply them to a
               practical problem.
             </div>
             <div className="mt-4 text-xl text-black">
-              <div className="font-bold text-purple-900">Win $$$:</div>
+              <div className="font-bold text-black">Win $$$:</div>
                 Sieze the opportunity to win big cash prizes.
             </div>
             <div className="mt-4 text-xl text-black">
-              <div className="font-bold text-purple-900">
+              <div className="font-bold text-black">
                 Boost Your Resume:
               </div>
               Show off your ability to work in a team, solve problems, and build solutions.
@@ -117,7 +117,7 @@ function page() {
           </div>
         </div>
 
-        <div className="border border-cyan-300 rounded-sm p-4 w-[94%] mx-auto mt-10 flex flex-col">
+        <div className="border border-pink-500 rounded-sm p-4 w-[94%] mx-auto mt-10 flex flex-col">
           <div className="text-2xl text-cyan-300 font-bold lg:text -right mb-10">
             When is it?
           </div>
@@ -189,23 +189,23 @@ function page() {
                 </div>
                 <div>
                     <BsPersonFill className="mr-4 inline text-2xl text-error" />
-                    htsours@vt.edu
-                </div>
-                <div>
-                    <BsPersonFill className="mr-4 inline text-2xl text-error" />
-                    samuelr20@vt.edu
-                </div>
-                <div>
-                    <BsPersonFill className="mr-4 inline text-2xl text-error" />
-                    mbutler23@vt.edu
-                </div>
-                <div>
-                    <BsPersonFill className="mr-4 inline text-2xl text-error" />
                     jeremiahhohn@vt.edu
                 </div>
                 <div>
                     <BsPersonFill className="mr-4 inline text-2xl text-error" />
                     brodyemery11@vt.edu
+                </div>
+                <div>
+                    <BsPersonFill className="mr-4 inline text-2xl text-error" />
+                    aaryanm@vt.edu
+                </div>
+                <div>
+                    <BsPersonFill className="mr-4 inline text-2xl text-error" />
+                    brook1212@vt.edu
+                </div>
+                <div>
+                    <BsPersonFill className="mr-4 inline text-2xl text-error" />
+                    axelc69@vt.edu
                 </div>
                 </div>
             </div>
