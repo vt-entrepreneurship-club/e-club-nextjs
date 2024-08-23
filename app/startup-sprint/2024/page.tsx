@@ -22,7 +22,7 @@ function page() {
         eventDate="2024-09-27T17:00:00"
       ></CountdownTimer>
       <Image
-        className="w-full lg:w-fit mx-auto"
+        className="w-full lg:w-1/2 mx-auto lg:my-0 my-10"
         src={StartupSprintLogo}
         alt="Startup Sprint Logo"
       />
@@ -30,7 +30,7 @@ function page() {
       <div className="w-fit mx-auto mb-10">
         <a href='https://forms.gle/pFcTMAD8rrgo7ZpeA' 
         target="_blank"
-        className="btn btn-primary blue-glow bg-gradient-to-r from-fuchsia-600 to-cyan-400 mx-auto text-[#272E3F] font-semibold text-xl hover:text-white">Register</a>
+        className="btn btn-primary blue-glow bg-gradient-to-r from-fuchsia-600 to-cyan-400 mx-auto text-[#272E3F] font-semibold lg:text-xl hover:text-white">Register</a>
       </div>
 
       <div className="lg:grid lg:grid-cols-2">
