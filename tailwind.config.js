@@ -9,6 +9,25 @@ module.exports = {
     themes: [
       "synthwave",
       {
+        startupSprint2024 : {
+          primary: "#00a6e2",
+
+          secondary: "#ffa836",
+
+          accent: "#919be0",
+
+          neutral: "#d1d3d7",
+
+          "base-100": "#170722",
+
+          info: "#78a7dd",
+
+          success: "#116f41",
+
+          warning: "#f9da6c",
+
+          error: "#f87263",
+        },
         dark: {
           primary: "#00a6e2",
 

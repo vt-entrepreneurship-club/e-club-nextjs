@@ -1,4 +1,6 @@
-import React from "react";
+"use client"
+
+import {useEffect} from "react";
 import CountdownTimer from "../../components/CountdownTimer";
 import StartupSprintLogo from "./startup sprint logo glow.png";
 import Image from "next/image";
@@ -13,28 +15,38 @@ import {
     BsStack,
     BsFillFileSlidesFill,
   } from "react-icons/bs";
+import Logo from './startup sprint updated logo.png'
 
 function page() {
+
+  useEffect(() => {
+    const html = document.querySelector('html');
+    if (html) {
+      // html.setAttribute('data-theme', 'startupSprint2024');
+    }
+  }, []);
+
+
   return (
-    <div className="w-[97%] mx-auto">
+    <div className="p-4 mx-auto rounded-md border border-orange-600" data-theme="startupSprint2024">
       <CountdownTimer
         className="bg-transparent border-none text-pink-400"
         eventDate="2024-09-27T17:00:00"
       ></CountdownTimer>
       <Image
         className="w-full lg:w-1/2 mx-auto lg:my-0 my-10"
-        src={StartupSprintLogo}
+        src={Logo}
         alt="Startup Sprint Logo"
       />
 
       <div className="w-fit mx-auto mb-10">
         <a href='https://forms.gle/pFcTMAD8rrgo7ZpeA' 
         target="_blank"
-        className="btn btn-primary blue-glow bg-gradient-to-r from-fuchsia-600 to-cyan-400 mx-auto text-[#272E3F] font-semibold lg:text-xl hover:text-white">Register</a>
+        className="btn y bg-gradient-to-r from-fuchsia-600 to-orange-400 mx-auto text-[#272E3F] font-semibold lg:text-xl hover:text-[#85F3D4]">Register</a>
       </div>
 
       <div className="lg:grid lg:grid-cols-2">
-        <div className="border-0 bg-[#F444FF] bg-gradient-to-b from-blue-500 to-cyan-300 rounded-md blue-glow p-4 w-[94%] mx-auto mt-10">
+        <div className="border-0 bg-gradient-to-b from-fuchsia-500 to-orange-500 rounded-md blue-glow p-4 w-[94%] mx-auto mt-10">
           <div className="text-2xl text-base-100 font-bold">
             💡 What is Startup Sprint?
           </div>
@@ -52,7 +64,7 @@ function page() {
           </div>
         </div>
 
-        <div className="border-0 bg-gradient-to-b from-blue-500 to-cyan-300 rounded-md blue-glow p-4 w-[94%] mx-auto mt-10">
+        <div className="border-0 bg-gradient-to-b from-fuchsia-500 to-orange-500 rounded-md blue-glow p-4 w-[94%] mx-auto mt-10">
             <h2 className="mb-4 text-2xl font-bold text-base-100">
               🌟 Why Should You Join?
             </h2>
@@ -145,7 +157,6 @@ function page() {
           </div>
         </div>
 
-      </div>
         <div className="w-full mx-auto mt-10">
             <div className="">
                 <h2 className="mb-4 text-2xl font-bold text-secondary">FAQs</h2>
@@ -212,6 +223,8 @@ function page() {
                 </div>
             </div>
         </div>
+
+      </div>
     </div>
   );
 }
