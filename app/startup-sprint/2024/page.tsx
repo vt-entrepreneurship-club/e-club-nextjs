@@ -17,7 +17,7 @@ import {
   } from "react-icons/bs";
 import Logo from './startup sprint updated logo.png'
 
-function page() {
+function StartupSprint24() {
 
   useEffect(() => {
     const html = document.querySelector('html');
@@ -229,4 +229,4 @@ function page() {
   );
 }
 
-export default page;
+export default StartupSprint24;
