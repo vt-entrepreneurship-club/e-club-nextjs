@@ -41,7 +41,6 @@ function NewsletterSignup() {
               type="text"
               name="b_5fa06e1fdfbb4ff1646ba3d2f_1dea666573"
               tabIndex={-1}
-              value=""
             />
           </div>
           <input
@@ -49,7 +48,7 @@ function NewsletterSignup() {
             name="subscribe"
             id="mc-embedded-subscribe"
             className="btn btn-primary btn-block mt-4"
-            value="Subscribe"
+            defaultValue="Subscribe"
           />
         </div>
       </form>
