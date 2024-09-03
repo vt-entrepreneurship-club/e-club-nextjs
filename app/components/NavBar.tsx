@@ -28,7 +28,7 @@ function NavBar() {
           Home
         </Link>
         <Link className="ml-20 text-xl" href="/recruiting">
-          Recruiting
+          Join our Team
         </Link>
         <Link
           className="ml-20 text-xl font-semibold text-pink-500"
