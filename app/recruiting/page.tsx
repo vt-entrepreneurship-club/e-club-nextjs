@@ -107,10 +107,11 @@ function RecruitmentPage() {
 
       <div className="p-4 lg:px-20 border border-red-400 rounded-lg mb-10 w-fit mx-auto">
         <div className="w-fit mx-auto text-red-400 font-medium text-xl text-center">
-            Applications open <span className="font-bold">Thursday September 5th</span>
+            Applications Closes <span className="font-bold">Sunday October 6th</span>
         </div>
-        <div className="text-white text-center mx-auto w-fit mt-6">Signup for our newsletter to get alerts and information about recruiting</div>
-        <NewsletterSignup></NewsletterSignup>
+        <a className="btn btn-block mt-10 btn-primary text-base-100" target="_blank" href="https://forms.office.com/Pages/ResponsePage.aspx?id=hGiVYK0Q-kCGPU8yweOjeoKcEQH4rglImactQpeb1MRUMkNFRjJWOEoxMlNZUEJGSjJGUDBZN0Q1Qy4u">
+            Apply Now
+        </a>
       </div>
 
       <div className="mt-20 text-2xl text-secondary font-semibold mx-auto w-fit text-center">Our leadership members have 100% job placement.</div>
