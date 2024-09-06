@@ -107,7 +107,7 @@ function RecruitmentPage() {
 
       <div className="p-4 lg:px-20 border border-red-400 rounded-lg mb-10 w-fit mx-auto">
         <div className="w-fit mx-auto text-red-400 font-medium text-xl text-center">
-            Applications Closes <span className="font-bold">Sunday October 6th</span>
+            Applications Close <span className="font-bold">Sunday October 6th</span>
         </div>
         <a className="btn btn-block mt-10 btn-primary text-base-100" target="_blank" href="https://forms.office.com/Pages/ResponsePage.aspx?id=hGiVYK0Q-kCGPU8yweOjeoKcEQH4rglImactQpeb1MRUMkNFRjJWOEoxMlNZUEJGSjJGUDBZN0Q1Qy4u">
             Apply Now
