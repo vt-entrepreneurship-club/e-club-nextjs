@@ -32,7 +32,7 @@ export default function Home() {
         </Vortex>
       </div> */}
 
-      <p className="mb-8 mt-10 text-xl lg:text-xl text-center lg:w-2/3 mx-auto">
+      <div className="mb-8 mt-10 text-xl lg:text-xl text-center lg:w-2/3 mx-auto">
         Right at the center of Virginia Tech's startup ecosystem, we bridge
         gaps between students, industry leaders, and startups that are building
         spectacular products.
@@ -48,7 +48,7 @@ export default function Home() {
           </a>, the Entrepreneurship Club helps students get integrated into the
           startup ecosystem.
         </p>
-      </p>
+      </div>
 
       <div className="lg:mb-20"></div>
 

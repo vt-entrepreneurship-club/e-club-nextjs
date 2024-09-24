@@ -58,17 +58,17 @@ function NavBar() {
           </summary>
           <ul className="menu dropdown-content rounded-box float-right mt-10 bg-base-100 shadow">
             <li>
-              <Link className="float-right text-right" href="/leadership">
-                Leadership
+              <Link className="" href="/">
+                Home
               </Link>
             </li>
             <li>
-              <Link className="font-semibold" href="/events">
-                Events
+              <Link className="float-right text-right" href="/recruiting">
+                Recruiting
               </Link>
             </li>
             <li>
-              <Link className="font-semibold text-pink-500 " href="/startup-sprint/2024">
+              <Link className="font-semibold text-pink-500 " href="/ss">
                 Startup Sprint
               </Link>
             </li>
