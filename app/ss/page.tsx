@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import CountdownTimer from "../components/CountdownTimer";
 import Image from "next/image";
 import { FaMoneyBill } from "react-icons/fa";
@@ -13,16 +13,15 @@ import Logo from "./startup sprint updated logo.png";
 import { useEffect } from "react";
 
 export default function StartupSprint24Page() {
-
   useEffect(() => {
-     // Set the 'data-theme' attribute on the HTML element
-     document.documentElement.setAttribute("data-theme", "startupSprint2024");
+    // Set the 'data-theme' attribute on the HTML element
+    document.documentElement.setAttribute("data-theme", "startupSprint2024");
 
-     // Optional cleanup: Remove the data-theme attribute when component unmounts
-     return () => {
-       document.documentElement.removeAttribute("data-theme");
-     };
-  }, [])
+    // Optional cleanup: Remove the data-theme attribute when component unmounts
+    return () => {
+      document.documentElement.removeAttribute("data-theme");
+    };
+  }, []);
 
   return (
     <div
@@ -135,65 +134,158 @@ export default function StartupSprint24Page() {
         </div>
 
         <div className="mx-auto mt-10 w-[94%] flex flex-col rounded-sm border border-pink-500 p-4">
-  <h2 className="text-2xl font-bold text-cyan-300">🗓️ What's the Rundown?</h2>
-  <div className="text-lg text-white mt-4">
-    <p>All events will be held at the <span className="font-bold">Apex Center (432 North Main St, right above PK's)</span></p>
-  </div>
+          <h2 className="text-2xl font-bold text-cyan-300">
+            🗓️ What's the Rundown?
+          </h2>
+          <div className="text-lg text-white mt-4">
+            <p>
+              All events will be held at the{" "}
+              <span className="font-bold">
+                Apex Center (432 North Main St, right above PK's)
+              </span>
+            </p>
+          </div>
 
-  <div className="mt-6">
-    <h3 className="text-xl font-bold text-cyan-300">Friday, Sep 27 - Kickoff</h3>
-    <p className="text-lg text-white">5:00 PM - <span className="font-bold">Startup Sprint Kickoff!</span></p>
-    <p className="text-white">
-      Fireside chat with <span className="font-bold">Kyle Krzeski</span>, CEO of Sabbath Ventures and VT alumnus.<br />
-      Detailed explanation of rules, rubric, and game plan.<br />
-      Team matching session for those looking for teammates.<br />
-      <span className="font-bold">Food provided!</span>
-    </p>
-  </div>
+          <div className="mt-6">
+            <h3 className="text-xl font-bold text-cyan-300">
+              Friday, Sep 27 - Kickoff
+            </h3>
+            <p className="text-lg text-white">
+              5:00 PM -{" "}
+              <span className="font-bold">Startup Sprint Kickoff!</span>
+            </p>
+            <p className="text-white">
+              Fireside chat with <span className="font-bold">Kyle Krzeski</span>
+              , CEO of Sabbath Ventures and VT alumnus.
+              <br />
+              Detailed explanation of rules, rubric, and game plan.
+              <br />
+              Team matching session for those looking for teammates.
+              <br />
+              <span className="font-bold">Food provided!</span>
+            </p>
+          </div>
 
-  <div className="mt-6">
-    <h3 className="text-xl font-bold text-cyan-300">Saturday, Sep 28 - Meet Alumni Founders</h3>
-    <p className="text-lg text-white">11:00 AM - <span className="font-bold">E-Club Recruiting Info Session</span></p>
-    <p className="text-white">Learn about opportunities to get involved with VT's entrepreneurship ecosystem.</p>
-    <p className="text-lg text-white mt-4">12:00 PM - <span className="font-bold">Problem Discovery Workshop</span></p>
-    <p className="text-white">Learn how to form a problem hypothesis based on your unique experiences.</p>
-    <p className="text-lg text-white mt-4">1:30 PM - <span className="font-bold">Early Startup Market Research and Strategy with AI</span></p>
-    <p className="text-white">Learn how to analyze markets and build a strategy using modern tools.</p>
-    <p className="text-lg text-white mt-4">2:30 PM - <span className="font-bold">Fireside Chat with Vince Baranauskas</span></p>
-    <p className="text-white">Hear from the cofounder and CTO of Macrovation, an advanced materials technology company.</p>
-    <p className="text-lg text-white mt-4">4:30 PM - <span className="font-bold">Mentorship Sessions with Kyle Krzeski</span></p>
-    <p className="text-white">Drop in for mentorship and feedback on your project.</p>
-  </div>
+          <div className="mt-6">
+            <h3 className="text-xl font-bold text-cyan-300">
+              Saturday, Sep 28 - Meet Alumni Founders
+            </h3>
+            <p className="text-lg text-white">
+              11:00 AM -{" "}
+              <span className="font-bold">E-Club Recruiting Info Session</span>
+            </p>
+            <p className="text-white">
+              Learn about opportunities to get involved with VT's
+              entrepreneurship ecosystem.
+            </p>
+            <p className="text-lg text-white mt-4">
+              12:00 PM -{" "}
+              <span className="font-bold">Problem Discovery Workshop</span>
+            </p>
+            <p className="text-white">
+              Learn how to form a problem hypothesis based on your unique
+              experiences.
+            </p>
+            <p className="text-lg text-white mt-4">
+              1:30 PM -{" "}
+              <span className="font-bold">
+                Early Startup Market Research and Strategy with AI
+              </span>
+            </p>
+            <p className="text-white">
+              Learn how to analyze markets and build a strategy using modern
+              tools.
+            </p>
+            <p className="text-lg text-white mt-4">
+              2:30 PM -{" "}
+              <span className="font-bold">
+                Fireside Chat with Vince Baranauskas
+              </span>
+            </p>
+            <p className="text-white">
+              Hear from the cofounder and CTO of Macrovation, an advanced
+              materials technology company.
+            </p>
+            <p className="text-lg text-white mt-4">
+              4:30 PM -{" "}
+              <span className="font-bold">
+                Mentorship Sessions with Kyle Krzeski
+              </span>
+            </p>
+            <p className="text-white">
+              Drop in for mentorship and feedback on your project.
+            </p>
+          </div>
 
-  <div className="mt-6">
-    <h3 className="text-xl font-bold text-cyan-300">Sunday, Sep 29 - Meet Student Founders</h3>
-    <p className="text-lg text-white">12:00 PM - <span className="font-bold">Startup Marketing Workshop</span></p>
-    <p className="text-white">Learn how to find, target, and acquire customers for your product.</p>
-    <p className="text-lg text-white mt-4">3:00 PM - <span className="font-bold">Fireside Chat with Mohit Yadav - CTO of QuickPark Solutions</span></p>
-    <p className="text-white">Hear from a sophomore VT student and cofounder of QuickPark Solutions.</p>
-    <p className="text-lg text-white mt-4">4:30 PM - <span className="font-bold">Meet the Team of Exit Sign Solutions</span></p>
-    <p className="text-white">Exit Sign Solutions is a startup building unbreakable exit signs and has raised $85,000 from investors.</p>
-  </div>
+          <div className="mt-6">
+            <h3 className="text-xl font-bold text-cyan-300">
+              Sunday, Sep 29 - Meet Student Founders
+            </h3>
+            <p className="text-lg text-white">
+              12:00 PM -{" "}
+              <span className="font-bold">Startup Marketing Workshop</span>
+            </p>
+            <p className="text-white">
+              Learn how to find, target, and acquire customers for your product.
+            </p>
+            <p className="text-lg text-white mt-4">
+              3:00 PM -{" "}
+              <span className="font-bold">
+                Fireside Chat with Mohit Yadav - CTO of QuickPark Solutions
+              </span>
+            </p>
+            <p className="text-white">
+              Hear from a sophomore VT student and cofounder of QuickPark
+              Solutions.
+            </p>
+            <p className="text-lg text-white mt-4">
+              4:30 PM -{" "}
+              <span className="font-bold">
+                Meet the Team of Exit Sign Solutions
+              </span>
+            </p>
+            <p className="text-white">
+              Exit Sign Solutions is a startup building unbreakable exit signs
+              and has raised $85,000 from investors.
+            </p>
+          </div>
 
-  <div className="mt-6">
-    <h3 className="text-xl font-bold text-cyan-300">Monday, Sep 30</h3>
-    <p className="text-lg text-white">10:00 AM - 2:00 PM - <span className="font-bold">Office Hours with Kyle Krzeski</span></p>
-    <p className="text-white">Come for last-minute advice or help before the submission deadline.</p>
-    <p className="text-lg text-white mt-4">11:59 PM - <span className="font-bold">Submissions Due</span></p>
-  </div>
+          <div className="mt-6">
+            <h3 className="text-xl font-bold text-cyan-300">Monday, Sep 30</h3>
+            <p className="text-lg text-white">
+              10:00 AM - 2:00 PM -{" "}
+              <span className="font-bold">Office Hours with Kyle Krzeski</span>
+            </p>
+            <p className="text-white">
+              Come for last-minute advice or help before the submission
+              deadline.
+            </p>
+            <p className="text-lg text-white mt-4">
+              11:59 PM - <span className="font-bold">Submissions Due</span>
+            </p>
+          </div>
 
-  <div className="mt-6">
-    <h3 className="text-xl font-bold text-cyan-300">Tuesday, Oct 1</h3>
-    <p className="text-white">Take a break—you deserve it! 😊</p>
-  </div>
+          <div className="mt-6">
+            <h3 className="text-xl font-bold text-cyan-300">Tuesday, Oct 1</h3>
+            <p className="text-white">Take a break—you deserve it! 😊</p>
+          </div>
 
-  <div className="mt-6">
-    <h3 className="text-xl font-bold text-cyan-300">Wednesday, Oct 2 - Closing Ceremony</h3>
-    <p className="text-lg text-white">6:00 PM - <span className="font-bold">Finalist Announcements & Pitches</span></p>
-    <p className="text-white">The finalists will pitch their startups for the chance to win big $$$.</p>
-  </div>
-</div>
-
+          <div className="mt-6">
+            <h3 className="text-xl font-bold text-cyan-300">
+              Wednesday, Oct 2 - Closing Ceremony
+            </h3>
+            <p className="text-lg text-white">
+              6:00 PM -{" "}
+              <span className="font-bold">
+                Finalist Announcements & Pitches
+              </span>
+            </p>
+            <p className="text-white">
+              The finalists will pitch their startups for the chance to win big
+              $$$.
+            </p>
+          </div>
+        </div>
 
         <div className="mx-auto mt-10 w-full">
           <div className="">
