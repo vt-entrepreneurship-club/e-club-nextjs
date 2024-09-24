@@ -100,6 +100,8 @@ const commonRequirements = [
   "Demonstrate creativity, strong organizational skills, and the ability to take initiative.",
 ];
 
+
+
 function RecruitmentPage() {
   return (
     <div className="container mx-auto p-6">
