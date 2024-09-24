@@ -146,6 +146,8 @@ export default function StartupSprint24Page() {
             </p>
           </div>
 
+          
+
           <div className="mt-6">
             <h3 className="text-xl font-bold text-cyan-300">
               Friday, Sep 27 - Kickoff
