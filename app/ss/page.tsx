@@ -539,6 +539,7 @@ export default function StartupSprint24Page() {
                 <BsPersonFill className="mr-4 inline text-2xl text-error" />
                 axelc69@vt.edu
               </div>
+              
             </div>
           </div>
         </div>
