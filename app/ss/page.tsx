@@ -108,7 +108,7 @@ export default function StartupSprint24Page() {
 
         <div className=" py-2 border-b border-gray-200">
           <div className="font-semibold">No previous work may be submitted</div>
-          <div className="text-white font-bold text-red-500">We will do our due diligence</div>
+          <div className="font-bold text-red-500">We will do our due diligence</div>
         </div>
         <div className="flex justify-between py-2 pl-6">
         </div>
