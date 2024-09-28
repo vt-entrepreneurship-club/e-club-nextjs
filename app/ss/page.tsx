@@ -27,11 +27,11 @@ export default function StartupSprint24Page() {
     <div
       className="mx-auto rounded-md border border-orange-600 p-4"
       data-theme="startupSprint2024"
-    >
+{/*     >
       <CountdownTimer
         className="border-none bg-transparent text-pink-400"
         eventDate="2024-09-27T17:00:00"
-      ></CountdownTimer>
+      ></CountdownTimer> */}
       <Image
         className="mx-auto my-10 w-full lg:my-0 lg:w-1/2"
         src={Logo}
