@@ -113,7 +113,7 @@ export default function StartupSprint24Page() {
                 <div className="font-semibold">
                   No previous work may be submitted
                 </div>
-                <div className="text-white font-bold text-red-500">
+                <div className="font-bold text-red-500">
                   We will do our due diligence
                 </div>
               </div>
