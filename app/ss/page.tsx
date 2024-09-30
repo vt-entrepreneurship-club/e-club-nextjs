@@ -52,7 +52,7 @@ export default function StartupSprint24Page() {
           <a
             target="_blank"
             href="https://eclubvt.notion.site/Startup-Sprint-Rubrics-10ed90daaa0180bcb6effa025f8b280c"
-            className="block text-center font-bold rounded border border-grey-200 py-2 px-4 w-[100%] hover:bg-gray-400"
+            className="block text-center font-bold rounded border border-grey-200 py-2 px-4 w-[100%] hover:bg-gray-400 hover:text-black"
           >
             Rubrics
           </a>
@@ -60,7 +60,7 @@ export default function StartupSprint24Page() {
           <a
             target="_blank"
             href={"../../../Startup Sprint 2024.pdf"}
-            className="block text-center font-bold rounded border border-grey-200 py-2 px-4 w-[100%] hover:bg-gray-400 mt-4"
+            className="block text-center font-bold rounded border border-grey-200 py-2 px-4 w-[100%] hover:bg-gray-400 hover:text-black mt-4"
           >
             Opening Ceremony Slides
           </a>
@@ -68,9 +68,17 @@ export default function StartupSprint24Page() {
           <a
             target="_blank"
             href="https://eclubvt.notion.site/Startup-Sprint-Resources-ac1cb75278cc4e8dbdefcce85c9ce2a2"
-            className="block text-center font-bold rounded border border-grey-200 py-2 px-4 w-[100%] hover:bg-gray-400 mt-4"
+            className="block text-center font-bold rounded border border-grey-200 py-2 px-4 w-[100%] hover:bg-gray-400 hover:text-black mt-4"
           >
             Resources
+          </a>
+
+          <a
+            target="_blank"
+            href={"../../../Startup Sprint Submission.pdf"}
+            className="block text-center font-bold rounded border border-red-600 py-2 px-4 w-[100%] hover:bg-red-700 hover:text-white mt-4"
+          >
+            Submission Guidelines
           </a>
 
           <div>
