@@ -1,10 +1,18 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./app/*.{js,jsx,ts,tsx}", "./app/**/*.{js,jsx,ts,tsx}"],
+    darkMode: ["class"],
+    content: ["./app/*.{js,jsx,ts,tsx}", "./app/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+  	extend: {
+  		borderRadius: {
+  			lg: 'var(--radius)',
+  			md: 'calc(var(--radius) - 2px)',
+  			sm: 'calc(var(--radius) - 4px)'
+  		},
+  		colors: {}
+  	}
   },
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui"), require("tailwindcss-animate")],
   daisyui: {
     themes: [
       "synthwave",

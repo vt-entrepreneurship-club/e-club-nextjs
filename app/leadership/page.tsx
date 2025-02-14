@@ -2,7 +2,7 @@ import ebenezer_zergabachew from "../assets/leadership_photos/ebenezer_zergabach
 import brody_emery from "../assets/leadership_photos/brody_emery.jpg";
 import jeremiah_hohn from "../assets/leadership_photos/jeremiah_hohn.jpg";
 import mason_butler from "../assets/leadership_photos/mason_butler.png";
-import { LeadershipProfile } from "../components/LeadershipProfile";
+import { LeadershipProfile } from "../../components/LeadershipProfile";
 
 export const metadata = {
   title: "Leadership",

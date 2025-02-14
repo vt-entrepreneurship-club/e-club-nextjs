@@ -1,5 +1,5 @@
 "use client";
-import CountdownTimer from "../components/CountdownTimer";
+import CountdownTimer from "../../components/CountdownTimer";
 import Image from "next/image";
 import { FaMoneyBill } from "react-icons/fa";
 import {

@@ -1,6 +1,7 @@
 "use client";
 
-import logo from "../assets/logo.png";
+// import logo from "../assets/logo.png";
+import logo from "../assets/logo.png"
 import Link from "next/link";
 import { isMobile } from "react-device-detect";
 import Image from "next/image";
