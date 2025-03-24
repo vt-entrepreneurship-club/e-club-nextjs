@@ -13,6 +13,8 @@ import Button from "../components/Button";
 export default function Home() {
   const [isScrolled, setIsScrolled] = useState(false);
 
+
+  
   useEffect(() => {
     const handleScroll = () => {
       const heroSection = document.getElementById("hero-section");
