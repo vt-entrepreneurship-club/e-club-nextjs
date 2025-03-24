@@ -123,3 +123,18 @@ background: #00a6e2;
     --radius: 0.5rem;
   }
 }
+
+@keyframes panorama {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-panorama {
+  display: flex;
+  width: 200%; /* Double the width to accommodate two images */
+  animation: panorama 60s linear infinite;
+}

@@ -12,50 +12,5 @@ module.exports = {
   		colors: {}
   	}
   },
-  plugins: [require("daisyui"), require("tailwindcss-animate")],
-  daisyui: {
-    themes: [
-      "synthwave",
-      {
-        startupSprint2024 : {
-          primary: "#00a6e2",
-
-          secondary: "#ffa836",
-
-          accent: "#919be0",
-
-          neutral: "#d1d3d7",
-
-          "base-100": "#290B3E",
-
-          info: "#78a7dd",
-
-          success: "#116f41",
-
-          warning: "#f9da6c",
-
-          error: "#f87263",
-        },
-        dark: {
-          primary: "#00a6e2",
-
-          secondary: "#ffa836",
-
-          accent: "#919be0",
-
-          neutral: "#d1d3d7",
-
-          "base-100": "#262e3f",
-
-          info: "#78a7dd",
-
-          success: "#116f41",
-
-          warning: "#f9da6c",
-
-          error: "#f87263",
-        },
-      },
-    ],
-  },
+  plugins: [require("tailwindcss-animate")],
 };
