@@ -1,8 +1,8 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
-import NavBar from "./components/NavBar";
+import NavBar from "../components/NavBar";
 import { Analytics } from "@vercel/analytics/react";
-import { Footer } from "./components/Footer";
+import { Footer } from "../components/Footer";
 import { CSPostHogProvider } from "./providers";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -21,10 +21,10 @@ export default function RootLayout({ children }) {
     <html lang="en" data-theme="dark">
       <CSPostHogProvider>
         <body className={`${inter.className}`}>
-          <NavBar></NavBar>
-          <main className="mx-auto w-11/12">{children}</main>
+          
+          <main className="">{children}</main>
           <Analytics />
-          <Footer />
+          
         </body>
       </CSPostHogProvider>
     </html>

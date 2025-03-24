@@ -1,12 +1,12 @@
 import React from "react";
-import aws from '../assets/company logos/aws.png';
-import bofa from '../assets/company logos/bofa.png';
-import linkedin from '../assets/company logos/linkedin.png';
-import cap1 from '../assets/company logos/cap1.png';
-import kogi from '../assets/company logos/kogi.png';
-import gartner from '../assets/company logos/gartner.png';
+import aws from '../../assets/company logos/aws.png';
+import bofa from '../../assets/company logos/bofa.png';
+import linkedin from '../../assets/company logos/linkedin.png';
+import cap1 from '../../assets/company logos/cap1.png';
+import kogi from '../../assets/company logos/kogi.png';
+import gartner from '../../assets/company logos/gartner.png';
 import Image from "next/image";
-import NewsletterSignup from "../components/NewsletterSignup";
+import NewsletterSignup from "../../components/NewsletterSignup";
 
 export const metadata = {
   title: "Join Our Team",

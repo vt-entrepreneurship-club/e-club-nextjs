@@ -21,15 +21,15 @@
   font-family: ApexMk2 !important;
 }
 
-html{
-  background-image: url('./assets/background_pattern.png');
+/* html{
+  background-image: url('../assets/background_pattern.png');
   background-repeat: repeat;
   background-size: 30%;
 }
 
 @media (max-width: 767px) {
   html{
-    background-image: url('./assets/background_pattern.png');
+    background-image: url('../assets/background_pattern.png');
     background-repeat: repeat;
     background-size: 100%;
   }
@@ -38,7 +38,7 @@ html{
 
 main{
   padding-bottom: 300px;
-}
+} */
 
 .navbar{
   cursor: pointer;
@@ -116,4 +116,25 @@ background: #00a6e2;
   /* background-color: #77319a; */
   box-shadow: inset 0 0 40px 30px #272E3F;
   /* box-shadow: 0 0 50px 0px #ffffff; */
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
+
+@keyframes panorama {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-panorama {
+  display: flex;
+  width: 200%; /* Double the width to accommodate two images */
+  animation: panorama 60s linear infinite;
 }
