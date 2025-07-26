@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 @font-face {
   font-family: ApexMk2-Bold;
@@ -55,9 +53,6 @@ main{
   font-style: italic;
 }
 
-h1,h2 h3{
-  color: #00a6e2 ;
-}
 
 .centered {
   position: absolute;
@@ -77,30 +72,6 @@ h1,h2 h3{
 /* img{
   border-radius: 15px;
 } */
-
-.navbar{
-  border-bottom: 3px #00a6e2 solid;
-}
-
-/* width */
-::-webkit-scrollbar {
-  width: 4px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-background: #595959;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-background: #00a6e2 ;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-background: #00a6e2;
-}
 
 .VWBackground {
   background-image: url('./vw/background.png');

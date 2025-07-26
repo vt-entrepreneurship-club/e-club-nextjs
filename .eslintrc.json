@@ -12,7 +12,7 @@
     "react/no-unescaped-entities": "off",
     "react/jsx-key": "warn",
     "tailwindcss/no-custom-classname": "off",
-    "tailwindcss/classnames-order": "warn",
+    "tailwindcss/classnames-order": "off",
     "@next/next/no-img-element": "off"
   },
   "settings": {

@@ -63,7 +63,7 @@ const CountdownTimer = (
         <span className="text-lg mx-2 font-bold">
           {timeLeft.seconds} seconds{" "}
         </span>
-        <span className="text-lg mx-2 font-bold text-gray-200"> left to apply</span>
+        {/* <span className="text-lg mx-2 font-bold text-gray-200"> left to apply</span> */}
       </div>
     </div>
   );

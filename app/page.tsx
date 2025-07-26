@@ -9,6 +9,7 @@ import logo from "../public/logo-stroke.png";
 import Card from "../components/Card";
 import NewsletterSignup from "../components/NewsletterSignup";
 import Button from "../components/Button";
+import NavBar from "../components/NavBar";
 
 export default function Home() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -38,11 +39,13 @@ export default function Home() {
 
   return (
     <main
-      className={`min-h-screen relative overflow-hidden font-serif transition-colors duration-500 pb-[300px]`}
+      className={`min-h-screen overflow-hidden font-serif transition-colors duration-500 pb-[300px] z-[0]`}
     >
+
+      
       {/* Animated Background Image */}
       <div
-        className={`fixed inset-0 z-0 overflow-hidden bg-gradient-to-b from-blue-200 to-[#61A6FB] transition-opacity duration-100`}
+        className="fixed inset-0 z-0 overflow-hidden bg-gradient-to-b from-blue-200 to-[#61A6FB] transition-opacity duration-100"
       >
         <div className="animate-panorama h-full">
           <Image
@@ -64,38 +67,15 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Centered Detached Navbar */}
-      {/* <div className="fixed top-6 left-0 right-0 z-10 flex justify-center px-4">
-        <nav className="backdrop-blur-md bg-white/10 border border-white/30 rounded-full px-8 py-4 w-auto">
-          <div className="flex justify-center space-x-8">
-            <button
-              onClick={() => scrollToSection("about-section")}
-              className="text-[#2c5e9a] ApexMk2 font-light"
-            >
-              About
-            </button>
-            <button
-              onClick={() => scrollToSection("events-section")}
-              className="text-[#2c5e9a] ApexMk2 font-light"
-            >
-              Events
-            </button>
-            <a href="#" className="text-[#2c5e9a] ApexMk2 font-light">
-              Team
-            </a>
-            <a href="#" className="text-[#2c5e9a] ApexMk2 font-light">
-              Join
-            </a>
-          </div>
-        </nav>
-      </div> */}
+      {/* <NavBar /> */}
+
 
       {/* Main Content */}
       <div
         id="hero-section"
-        className="relative z-1 min-h-screen flex flex-col items-center justify-center px-4 pt-20"
+        className="relative z-10 min-h-screen flex flex-col items-center justify-center px-4 pt-32"
       >
-        <h1 className="text-4xl  ApexMk2-Bold mb-10 md:text-5xl font-light text-white text-center drop-shadow-lg">
+        <h1 className="text-4xl ApexMk2-Bold mb-10 md:text-5xl font-light text-white text-center drop-shadow-lg">
           Startups Start Here
         </h1>
 
