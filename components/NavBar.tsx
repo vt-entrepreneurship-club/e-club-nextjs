@@ -29,7 +29,7 @@ function NavBar() {
     }
   ]
   return (
-    <nav className="fixed top-6 left-0 right-0 z-100 p-4 px-6 w-3/4 mx-auto backdrop-blur-md bg-transparent border border-white/30 rounded-full">
+    <nav className="fixed top-3 left-0 right-0 z-100 p-4 px-6 w-3/4 mx-auto backdrop-blur-md bg-transparent border border-white/30 rounded-full">
       <div className="relative w-full h-full mx-auto flex justify-between items-center">
         <Link href="/" className="flex items-center">
           <Image 

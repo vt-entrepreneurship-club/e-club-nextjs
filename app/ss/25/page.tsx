@@ -6,20 +6,20 @@ import CountdownTimer from '../../../components/CountdownTimer'
 function page() {
   return (
     <div className='min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-gray-950 flex items-center justify-center p-4'>
-      <div className='text-center space-y-6 mt-20'>
+      <div className='text-center space-y-6 mt-40'>
         
-        <Image src={logo} alt="Startup Sprint 25" width={1000} height={1000} className='mx-auto' />
+        <Image src={logo} alt="Startup Sprint 25" width={1000} height={1000} className='mx-auto w-[90%]' />
         
         <p className='text-xl text-gray-300 max-w-2xl text-center mx-auto'>
           Virginia Tech's premier startup competition.
         </p>
 
-        <div className='mt'>
+        {/* <div className='mt'>
           <CountdownTimer 
             eventDate="2025-09-25T18:00:00" 
             className="bg-violet-500/10 backdrop-blur-sm border-violet-500/30 text-violet-300"
           />
-        </div>
+        </div> */}
 
 
         <div className='animate-pulse inline-block'>
