@@ -26,7 +26,7 @@ export default function About() {
               See E‑Club in Action
             </h2>
             <div className="aspect-video rounded-xl overflow-hidden bg-gray-700/50 flex items-center justify-center">
-              {/* Replace with actual YouTube embed */}
+              {/* use actual YouTube embed */}
               <div className="text-white/60 text-center">
                 <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-red-600 flex items-center justify-center">
                   <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -52,7 +52,7 @@ export default function About() {
               <div className="aspect-video rounded-xl overflow-hidden mb-4 bg-gray-700/30">
                 <Image
                   src="/placeholder.svg?height=300&width=500"
-                  alt="Startup Sprint participants collaborating"
+                  alt="image"
                   width={500}
                   height={300}
                   className="w-full h-full object-cover"
@@ -70,7 +70,7 @@ export default function About() {
               <div className="aspect-video rounded-xl overflow-hidden mb-4 bg-gray-700/30">
                 <Image
                   src="/placeholder.svg?height=300&width=500"
-                  alt="Workshop session with industry speaker"
+                  alt="image"
                   width={500}
                   height={300}
                   className="w-full h-full object-cover"
@@ -88,7 +88,7 @@ export default function About() {
               <div className="aspect-video rounded-xl overflow-hidden mb-4 bg-gray-700/30">
                 <Image
                   src="/placeholder.svg?height=300&width=500"
-                  alt="Student pitching at competition"
+                  alt="image"
                   width={500}
                   height={300}
                   className="w-full h-full object-cover"
@@ -106,7 +106,7 @@ export default function About() {
               <div className="aspect-video rounded-xl overflow-hidden mb-4 bg-gray-700/30">
                 <Image
                   src="/placeholder.svg?height=300&width=500"
-                  alt="Students at entrepreneurship expo"
+                  alt="image"
                   width={500}
                   height={300}
                   className="w-full h-full object-cover"
