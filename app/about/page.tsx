@@ -12,7 +12,7 @@ export default function About() {
           </h1>
           <div className="rounded-2xl border border-white/30 bg-white/5 backdrop-blur-sm p-8 max-w-4xl mx-auto">
             <p className="text-white/90 text-xl leading-relaxed font-serif text-left">
-              Entrepreneurship Club at Virginia Tech empowers students through innovation, skill development, and
+              Founded in 2012, the Entrepreneurship Club at Virginia Tech empowers students through innovation, skill development, and
               cross-disciplinary collaboration. We provide hands-on experiences and access to resources that prepare
               students to lead in rapidly evolving industries.
             </p>
@@ -23,7 +23,7 @@ export default function About() {
         <section className="mb-16">
           <div className="rounded-2xl border border-white/30 bg-white/5 backdrop-blur-sm p-6">
             <h2 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-gray-400 via-gray-100 to-gray-400 ApexMk2-Bold mb-6 text-center">
-              See E‑Club in Action
+              See E‑Club in Action:
             </h2>
             <div className="aspect-video rounded-xl overflow-hidden bg-gray-700/50 flex items-center justify-center">
               {/* use actual YouTube embed */}
@@ -51,7 +51,7 @@ export default function About() {
             <div className="rounded-2xl border border-white/30 bg-white/5 backdrop-blur-sm p-6">
               <div className="aspect-video rounded-xl overflow-hidden mb-4 bg-gray-700/30">
                 <Image
-                  src="/placeholder.svg?height=300&width=500"
+                  src="/ss.jpg"
                   alt="image"
                   width={500}
                   height={300}
@@ -69,7 +69,7 @@ export default function About() {
             <div className="rounded-2xl border border-white/30 bg-white/5 backdrop-blur-sm p-6">
               <div className="aspect-video rounded-xl overflow-hidden mb-4 bg-gray-700/30">
                 <Image
-                  src="/placeholder.svg?height=300&width=500"
+                  src="/workshop.jpg"
                   alt="image"
                   width={500}
                   height={300}
@@ -87,7 +87,7 @@ export default function About() {
             <div className="rounded-2xl border border-white/30 bg-white/5 backdrop-blur-sm p-6">
               <div className="aspect-video rounded-xl overflow-hidden mb-4 bg-gray-700/30">
                 <Image
-                  src="/placeholder.svg?height=300&width=500"
+                  src="/pitch.jpg"
                   alt="image"
                   width={500}
                   height={300}
@@ -105,7 +105,7 @@ export default function About() {
             <div className="rounded-2xl border border-white/30 bg-white/5 backdrop-blur-sm p-6">
               <div className="aspect-video rounded-xl overflow-hidden mb-4 bg-gray-700/30">
                 <Image
-                  src="/placeholder.svg?height=300&width=500"
+                  src="/expo.jpg"
                   alt="image"
                   width={500}
                   height={300}
@@ -129,15 +129,15 @@ export default function About() {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
               <div>
-                <div className="text-4xl font-bold text-white mb-2">$[X]K+</div>
+                <div className="text-4xl font-bold text-white mb-2">$13,000+</div>
                 <div className="text-white/70">Funding to Student Startups</div>
               </div>
               <div>
-                <div className="text-4xl font-bold text-white mb-2">[X]+</div>
+                <div className="text-4xl font-bold text-white mb-2">50+</div>
                 <div className="text-white/70">Speaker Events & Panels</div>
               </div>
               <div>
-                <div className="text-4xl font-bold text-white mb-2">[X]+</div>
+                <div className="text-4xl font-bold text-white mb-2">20+</div>
                 <div className="text-white/70">Student Founders Supported</div>
               </div>
             </div>
