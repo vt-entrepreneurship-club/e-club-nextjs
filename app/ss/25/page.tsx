@@ -5,6 +5,7 @@ import logo from "../../../public/Startup Sprint 2025 Logo.png";
 import { Smooch } from "next/font/google";
 import CountdownTimer from "@components/CountdownTimer";
 import whatWillYouBuild from "../../../public/what will you build.png";
+import { RainbowButton } from "@components/magicui/rainbow-button";
 
 const smooch = Smooch({ subsets: ["latin"], weight: "400", display: "swap" });
 
@@ -26,44 +27,27 @@ function page() {
             </div>
           </div>
 
-          <CountdownTimer date={new Date("2025-09-25T17:00:00Z")} className="text-pink-500 border-none relative right-2 lg:right-4" />
+          <CountdownTimer
+            date={new Date("2025-09-25T17:00:00Z")}
+            className="text-pink-500 border-none relative right-2 lg:right-4"
+          />
 
-
-          
-        </section>
-
-        <section className="mt-40 pt-10 w-full relative">
-        <h1 className="mt-6 text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight w-fit mx-auto">
-            go from idea to launch in just{" "}
-            
-            <span className={`${smooch.className} text-7xl bg-gradient-to-r from-pink-500 via-fuchsia-500 to-sky-400 bg-clip-text text-transparent`}>
-              a few days
-            </span>
-          </h1>
-
-          <div className="flex items-center justify-center">
-            <p className="mt-4 text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl">
-              Startup Sprint is an immersive competition where you will
-              <span className="text-pink-400"> identify a real problem</span>,
-              <span className="text-sky-400"> build a scrappy product</span>,
-              and
-              <span className="text-pink-400"> craft your go‑to‑market</span> —
-              supported by events, workshops, and mentors.
-            </p>
-
-            <Image src={whatWillYouBuild} alt="What will you build?" className="w-1/2 relative top-30 right-30" />
-
+          <div className="mt-10 flex justify-center">
+            <RainbowButton
+              asChild
+              variant="outline"
+              className="[--color-1:theme(colors.pink.500)] [--color-2:theme(colors.sky.400)] [--color-3:theme(colors.fuchsia.500)] [--color-4:theme(colors.sky.400)] [--color-5:theme(colors.pink.500)] px-20"
+            >
+              <Link href="/student-form" aria-label="Register for Startup Sprint">
+                Register
+              </Link>
+            </RainbowButton>
           </div>
-
-
-          
         </section>
 
-        <div className="mx-auto h-px w-full max-w-5xl bg-gradient-to-r from-transparent via-white/10 to-transparent" />
-
-        {/* What is it */}
-        <section className="grid md:grid-cols-5 gap-10 items-start">
-        <div className="md:col-span-2 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-1 gap-3">
+         {/* What is it */}
+         <section className="grid md:grid-cols-5 gap-10 items-start mt-60">
+          <div className="md:col-span-2 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-1 gap-3">
             <div className="rounded-xl border border-pink-500/30 bg-gradient-to-br from-pink-500/10 to-transparent p-4">
               <p className="text-xs uppercase tracking-wide text-pink-300/80">
                 Step 1
@@ -97,9 +81,9 @@ function page() {
               What is Startup Sprint?
             </h2>
             <p className="text-gray-300 leading-relaxed">
-              Over a focused sprint, you and your team will progress from{" "}
+              Over a focused sprint, you and your team will progress from {" "}
               <span className="text-pink-400">problem discovery</span> to
-              <span className="text-sky-400"> prototype</span> to a{" "}
+              <span className="text-sky-400"> prototype</span> to a {" "}
               <span className="text-pink-400">compelling pitch</span>. Along the
               way, you will attend hands‑on workshops, meet operators and
               founders, validate your assumptions with users, and ship something
@@ -124,8 +108,39 @@ function page() {
               </li>
             </ul>
           </div>
-        
         </section>
+
+        <section className="mt-40 pt-10 w-full relative">
+          <div className="lg:flex lg:items-center justify-center">
+            <div className="lg:w-1/2 lg:mr-20">
+              <h1 className="mt-6 text-3xl sm:text-7xl md:text-5xl font-semibold tracking-tight w-fit mx-auto">
+                from idea to launch in just {" "}
+                <br className="lg:hidden" />
+                <span
+                  className={`${smooch.className} text-7xl bg-gradient-to-t pr-3 from-pink-500 via-indigo-400 to-sky-400 bg-clip-text text-transparent mx-auto lg:mx-0`}
+                >
+                  a few days
+                </span>
+              </h1>
+              <p className="mt-4 text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl">
+                Startup Sprint is an immersive competition where you will
+                identify a real problem, build a scrappy product, and craft your
+                go‑to‑market {" "}
+                — supported by events, workshops, and mentors.
+              </p>
+            </div>
+
+            <Image
+              src={whatWillYouBuild}
+              alt="What will you build?"
+              className="lg:w-1/2 rel ative top-50 right-30"
+            />
+          </div>
+        </section>
+
+        <div className="mx-auto h-px w-full max-w-5xl bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+
+       
 
         <div className="mx-auto h-px w-full max-w-5xl bg-gradient-to-r from-transparent via-white/10 to-transparent" />
 
@@ -134,7 +149,7 @@ function page() {
           <div className="grid md:grid-cols-2 gap-6 items-center">
             <div className="space-y-2">
               <h3 className="text-xl md:text-2xl font-semibold">
-                Build momentum with a{" "}
+                Build momentum with a {" "}
                 <span className="bg-gradient-to-r from-pink-400 to-sky-300 bg-clip-text text-transparent">
                   supportive community
                 </span>
