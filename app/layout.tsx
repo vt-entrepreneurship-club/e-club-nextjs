@@ -6,8 +6,10 @@ import { Analytics } from "@vercel/analytics/react";
 import { Footer } from "../components/Footer";
 import { CSPostHogProvider } from "./providers";
 import NavBar from "../components/NavBar";
+import { Aldrich } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
+const aldrich = Aldrich({ subsets: ["latin"], weight: "400", variable: "--font-aldrich", display: "swap" });
 
 // export const metadata = {
 //   title: "Entrepreneurship Club at Virginia Tech",
@@ -22,7 +24,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" data-theme="dark">
       <CSPostHogProvider>
-        <body className={`${inter.className}`}>
+        <body className={`${inter.className} ${aldrich.variable}`}>
             <NavBar />
           <main className="min-h-screen">
             {children}

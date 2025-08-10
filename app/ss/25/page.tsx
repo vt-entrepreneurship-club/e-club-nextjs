@@ -2,6 +2,11 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "../../../public/Startup Sprint 2025 Logo.png";
+import { Smooch } from "next/font/google";
+import CountdownTimer from "@components/CountdownTimer";
+import whatWillYouBuild from "../../../public/what will you build.png";
+
+const smooch = Smooch({ subsets: ["latin"], weight: "400", display: "swap" });
 
 function page() {
   return (
@@ -21,48 +26,72 @@ function page() {
             </div>
           </div>
 
-          <h1 className="mt-6 text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight">
-            Launch a startup in just{" "}
-            <span className="bg-gradient-to-r from-pink-500 via-fuchsia-500 to-sky-400 bg-clip-text text-transparent">
+          <CountdownTimer date={new Date("2025-09-25T17:00:00Z")} className="text-pink-500 border-none relative right-2 lg:right-4" />
+
+
+          
+        </section>
+
+        <section className="mt-40 pt-10 w-full relative">
+        <h1 className="mt-6 text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight w-fit mx-auto">
+            go from idea to launch in just{" "}
+            
+            <span className={`${smooch.className} text-7xl bg-gradient-to-r from-pink-500 via-fuchsia-500 to-sky-400 bg-clip-text text-transparent`}>
               a few days
             </span>
           </h1>
 
-          <p className="mt-4 text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
-            Startup Sprint is an immersive competition where you will
-            <span className="text-pink-400"> identify a real problem</span>,
-            <span className="text-sky-400"> build a scrappy product</span>,
-            and
-            <span className="text-pink-400"> craft your go‑to‑market</span> —
-            supported by events, workshops, and mentors.
-          </p>
+          <div className="flex items-center justify-center">
+            <p className="mt-4 text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl">
+              Startup Sprint is an immersive competition where you will
+              <span className="text-pink-400"> identify a real problem</span>,
+              <span className="text-sky-400"> build a scrappy product</span>,
+              and
+              <span className="text-pink-400"> craft your go‑to‑market</span> —
+              supported by events, workshops, and mentors.
+            </p>
 
-          <div className="mt-6 flex flex-wrap items-center justify-center gap-4">
-            <Link
-              href="/newsletter"
-              className="rounded-full px-6 py-3 font-medium bg-gradient-to-r from-pink-500 to-sky-400 text-slate-900 hover:opacity-90 transition"
-            >
-              Join the interest list
-            </Link>
-            <Link
-              href="/mentor-form"
-              className="rounded-full px-6 py-3 font-medium border border-white/20 hover:border-white/40 text-white/90 hover:text-white transition backdrop-blur-sm"
-            >
-              Become a mentor
-            </Link>
-            <button
-              disabled
-              className="rounded-full px-6 py-3 font-medium border border-pink-500/40 text-pink-300/80 cursor-not-allowed"
-            >
-              Applications open soon
-            </button>
+            <Image src={whatWillYouBuild} alt="What will you build?" className="w-1/2 relative top-30 right-30" />
+
           </div>
+
+
+          
         </section>
 
         <div className="mx-auto h-px w-full max-w-5xl bg-gradient-to-r from-transparent via-white/10 to-transparent" />
 
         {/* What is it */}
         <section className="grid md:grid-cols-5 gap-10 items-start">
+        <div className="md:col-span-2 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-1 gap-3">
+            <div className="rounded-xl border border-pink-500/30 bg-gradient-to-br from-pink-500/10 to-transparent p-4">
+              <p className="text-xs uppercase tracking-wide text-pink-300/80">
+                Step 1
+              </p>
+              <h3 className="font-semibold text-pink-200">Identify</h3>
+              <p className="text-sm text-gray-300/90">
+                Find a real problem worth solving.
+              </p>
+            </div>
+            <div className="rounded-xl border border-sky-500/30 bg-gradient-to-br from-sky-500/10 to-transparent p-4">
+              <p className="text-xs uppercase tracking-wide text-sky-300/80">
+                Step 2
+              </p>
+              <h3 className="font-semibold text-sky-200">Build</h3>
+              <p className="text-sm text-gray-300/90">
+                Create the simplest product that proves value.
+              </p>
+            </div>
+            <div className="rounded-xl border border-fuchsia-500/30 bg-gradient-to-br from-fuchsia-500/10 to-transparent p-4">
+              <p className="text-xs uppercase tracking-wide text-fuchsia-300/80">
+                Step 3
+              </p>
+              <h3 className="font-semibold text-fuchsia-200">Launch</h3>
+              <p className="text-sm text-gray-300/90">
+                Plan your go‑to‑market and pitch your progress.
+              </p>
+            </div>
+          </div>
           <div className="md:col-span-3 space-y-4">
             <h2 className="text-2xl md:text-3xl font-semibold bg-gradient-to-r from-pink-400 to-sky-300 bg-clip-text text-transparent">
               What is Startup Sprint?
@@ -95,35 +124,7 @@ function page() {
               </li>
             </ul>
           </div>
-          <div className="md:col-span-2 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-1 gap-3">
-            <div className="rounded-xl border border-pink-500/30 bg-gradient-to-br from-pink-500/10 to-transparent p-4">
-              <p className="text-xs uppercase tracking-wide text-pink-300/80">
-                Step 1
-              </p>
-              <h3 className="font-semibold text-pink-200">Identify</h3>
-              <p className="text-sm text-gray-300/90">
-                Find a real problem worth solving.
-              </p>
-            </div>
-            <div className="rounded-xl border border-sky-500/30 bg-gradient-to-br from-sky-500/10 to-transparent p-4">
-              <p className="text-xs uppercase tracking-wide text-sky-300/80">
-                Step 2
-              </p>
-              <h3 className="font-semibold text-sky-200">Build</h3>
-              <p className="text-sm text-gray-300/90">
-                Create the simplest product that proves value.
-              </p>
-            </div>
-            <div className="rounded-xl border border-fuchsia-500/30 bg-gradient-to-br from-fuchsia-500/10 to-transparent p-4">
-              <p className="text-xs uppercase tracking-wide text-fuchsia-300/80">
-                Step 3
-              </p>
-              <h3 className="font-semibold text-fuchsia-200">Launch</h3>
-              <p className="text-sm text-gray-300/90">
-                Plan your go‑to‑market and pitch your progress.
-              </p>
-            </div>
-          </div>
+        
         </section>
 
         <div className="mx-auto h-px w-full max-w-5xl bg-gradient-to-r from-transparent via-white/10 to-transparent" />
