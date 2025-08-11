@@ -1,103 +1,69 @@
-"use client"
+import { cn } from "@components/lib/utils";
 
-import React from "react"
-
-export type RetroGridProps = {
-  className?: string
-  angle?: number // rotation around X axis
-  cellSize?: number
-  opacity?: number
-  lightLineColor?: string
-  darkLineColor?: string
-  useMask?: boolean
-  lineWidth?: number
-  offsetY?: string // CSS length/percentage for bottom offset (e.g., "-25%" or "-120px")
-  fieldScale?: number // multiplier for plane size; 2.2 => 220%
+interface RetroGridProps extends React.HTMLAttributes<HTMLDivElement> {
+  /**
+   * Additional CSS classes to apply to the grid container
+   */
+  className?: string;
+  /**
+   * Rotation angle of the grid in degrees
+   * @default 65
+   */
+  angle?: number;
+  /**
+   * Grid cell size in pixels
+   * @default 60
+   */
+  cellSize?: number;
+  /**
+   * Grid opacity value between 0 and 1
+   * @default 0.5
+   */
+  opacity?: number;
+  /**
+   * Grid line color in light mode
+   * @default "gray"
+   */
+  lightLineColor?: string;
+  /**
+   * Grid line color in dark mode
+   * @default "gray"
+   */
+  darkLineColor?: string;
 }
 
 export function RetroGrid({
   className,
-  angle = 65,
-  cellSize = 60,
-  opacity = 0.5,
-  lightLineColor = "#7dd3fc",
-  darkLineColor = "#7dd3fc",
-  useMask = true,
-  lineWidth = 1,
-  offsetY = "-30%",
-  fieldScale = 2.2,
+  angle = 50,
+  cellSize = 100,
+  opacity = 0.2,
+  lightLineColor = "#6CC9FF",
+  darkLineColor = "#6CC9FF",
+  ...props
 }: RetroGridProps) {
-  const lineColor = darkLineColor
-
-  const lw = Math.max(1, Math.floor(lineWidth))
-
-  const backgroundImage = `
-    repeating-linear-gradient(
-      0deg,
-      transparent 0px,
-      transparent ${cellSize - lw}px,
-      ${lineColor} ${cellSize - lw}px,
-      ${lineColor} ${cellSize}px
-    ),
-    repeating-linear-gradient(
-      90deg,
-      transparent 0px,
-      transparent ${cellSize - lw}px,
-      ${lineColor} ${cellSize - lw}px,
-      ${lineColor} ${cellSize}px
-    )
-  `
-
-  const mask = useMask
-    ? {
-        maskImage:
-          "linear-gradient(to top, transparent 0%, black 25%, black 65%, transparent 95%)",
-        WebkitMaskImage:
-          "linear-gradient(to top, transparent 0%, black 25%, black 65%, transparent 95%)",
-      }
-    : {}
-
-  const planeSizePercent = Math.max(1, fieldScale) * 100
+  const gridStyles = {
+    "--grid-angle": `${angle}deg`,
+    "--cell-size": `${cellSize}px`,
+    "--opacity": opacity,
+    "--light-line": lightLineColor,
+    "--dark-line": darkLineColor,
+  } as React.CSSProperties;
 
   return (
-    <div className={`pointer-events-none absolute inset-0 ${className ?? ""}`}>
-      <div
-        className="absolute left-1/2 -translate-x-1/2 will-change-transform"
-        style={{
-          bottom: offsetY,
-          width: `${planeSizePercent}%`,
-          height: `${planeSizePercent}%`,
-          transformOrigin: "50% 100%",
-          transform: `perspective(1000px) rotateX(${angle}deg)`,
-          backgroundImage,
-          backgroundSize: `${cellSize}px ${cellSize}px, ${cellSize}px ${cellSize}px`,
-          backgroundRepeat: "repeat",
-          opacity,
-          ...mask,
-          animation: "rg-scroll 18s linear infinite",
-        }}
-      />
+    <div
+      className={cn(
+        "pointer-events-none absolute size-full overflow-hidden [perspective:200px]",
+        `opacity-[var(--opacity)]`,
+        className,
+      )}
+      style={gridStyles}
+      {...props}
+    >
+      <div className="absolute inset-0 [transform:rotateX(var(--grid-angle))]">
+        <div className="animate-grid [background-image:linear-gradient(to_right,var(--light-line)_2px,transparent_0),linear-gradient(to_bottom,var(--light-line)_2px,transparent_0)] [background-repeat:repeat] [background-size:var(--cell-size)_var(--cell-size)] [height:300vh] [inset:0%_0px] [margin-left:-200%] [transform-origin:100%_0_0] [width:600vw] dark:[background-image:linear-gradient(to_right,var(--dark-line)_2px,transparent_0),linear-gradient(to_bottom,var(--dark-line)_2px,transparent_0)]" />
+      </div>
 
-      {/* Soft horizon glow */}
-      <div
-        className="absolute inset-x-0 top-1/2 h-16"
-        style={{
-          background:
-            "radial-gradient(ellipse at center, rgba(125,211,252,0.35) 0%, rgba(125,211,252,0.15) 35%, rgba(125,211,252,0.08) 55%, transparent 70%)",
-          filter: "blur(8px)",
-        }}
-      />
-
-      <style jsx>{`
-        @keyframes rg-scroll {
-          0% {
-            background-position: 0px 0px, 0px 0px;
-          }
-          100% {
-            background-position: 0px 1000px, 1000px 0px;
-          }
-        }
-      `}</style>
+      <div className="absolute inset-0 bg-gradient-to-t from-transparent to-transparent to-90% dark:from-black" />
     </div>
-  )
+  );
 }
