@@ -6,12 +6,14 @@ type NewsletterSignupProps = {
   buttonClassName?: string;
   textClassName?: string;
   text?: string;
+  inputClassName?: string;
 };
 
-function NewsletterSignup({
+function  NewsletterSignup({
   buttonClassName = "",
   textClassName = "",
   text = "Join 700+ founders, builders, and entrepreneurs on our mailing list to stay up to date with our latest events.",
+  inputClassName = "",
 }: NewsletterSignupProps) {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState(""); // "loading", "success", or "error"
@@ -49,7 +51,7 @@ function NewsletterSignup({
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Enter your email"
-            className="w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
+            className={`w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300 ${inputClassName}`}
           />
         </div>
         {status === "error" && (

@@ -27,7 +27,7 @@ const faqs: { header: string; body: string }[] = [
   },
   {
     header: "What’s the time commitment?",
-    body: "It’s an intensive 5‑day sprint with evening workshops, mentorship, and build time.",
+    body: "It’s 5 days packed with evening workshops, mentorship, and build time.",
   },
   {
     header: "How do I register?",
@@ -48,15 +48,17 @@ function page() {
                 alt="Startup Sprint 25"
                 width={1000}
                 height={1000}
-                className="mx-auto w-[85%] max-w-3xl drop-shadow-[0_0_50px_rgba(56,189,248,0.25)]"
+                className="mx-auto w-[85%] max-w-3xl lg:relative lg:left-2 drop-shadow-[0_0_50px_rgba(56,189,248,0.25)]"
               />
             </div>
           </div>
 
+
           <CountdownTimer
-            date={new Date("2025-09-25T17:00:00Z")}
-            className="font-aldrich text-[#f33ed8] border-none relative right-2 lg:right-4"
+            date={new Date("2025-09-25T21:00:00Z")}
+            className="font-aldrich text-[#f33ed8] border-none relative"
           />
+            <span className="font-aldrich text-sm">Thursday, September 25th - Monday, September 29th</span>
 
           <div className="mt-10 flex justify-center">
             <div
@@ -65,6 +67,15 @@ function page() {
             >
               Registration opens soon
             </div>
+          </div>
+
+          <div className="mt-12">
+            <a
+              href="#newsletter"
+              className="text-white/70 text-sm decoration-white/20 hover:decoration-white/40"
+            >
+              <u>Sign up for our newsletter to get updates and announcements</u>
+            </a>
           </div>
         </section>
 
@@ -201,7 +212,7 @@ function page() {
           </div>
         </section>
         
-        <div className="mt-10 lg:w-1/2 mx-auto">
+        <div id="newsletter" className="mt-10 lg:w-1/2 mx-auto">
 
           <NewsletterSignup
             text="Get event updates and application reminders."

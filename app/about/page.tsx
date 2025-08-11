@@ -1,5 +1,6 @@
 "use client"
 import Image from "next/image"
+import NewsletterSignup from "@components/NewsletterSignup";
 
 export default function About() {
   return (
@@ -20,13 +21,13 @@ export default function About() {
         </section>
 
         {/* Featured Video */}
-        <section className="mb-16">
+        {/* <section className="mb-16">
           <div className="rounded-2xl border border-white/30 bg-white/5 backdrop-blur-sm p-6">
             <h2 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-gray-400 via-gray-100 to-gray-400 ApexMk2-Bold mb-6 text-center">
               See E‑Club in Action:
             </h2>
             <div className="aspect-video rounded-xl overflow-hidden bg-gray-700/50 flex items-center justify-center">
-              {/* use actual YouTube embed */}
+              {
               <div className="text-white/60 text-center">
                 <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-red-600 flex items-center justify-center">
                   <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -38,7 +39,8 @@ export default function About() {
               </div>
             </div>
           </div>
-        </section>
+        </section> 
+        */}
 
         {/* What We Do */}
         <section className="mb-16">
@@ -129,15 +131,15 @@ export default function About() {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
               <div>
-                <div className="text-4xl font-bold text-white mb-2">$13,000+</div>
-                <div className="text-white/70">Funding to Student Startups</div>
+                <div className="text-4xl font-bold text-white mb-2">$20,000+</div>
+                <div className="text-white/70">Funding distributed to Student Startups</div>
               </div>
               <div>
                 <div className="text-4xl font-bold text-white mb-2">50+</div>
                 <div className="text-white/70">Speaker Events & Panels</div>
               </div>
               <div>
-                <div className="text-4xl font-bold text-white mb-2">20+</div>
+                <div className="text-4xl font-bold text-white mb-2">200+</div>
                 <div className="text-white/70">Student Founders Supported</div>
               </div>
             </div>
@@ -151,24 +153,14 @@ export default function About() {
               <h2 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-gray-400 via-gray-100 to-gray-400 ApexMk2-Bold mb-6">
                 Get Involved
               </h2>
-              <div className="space-y-4">
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-white/80 font-serif">Join our general body or become a dues-paying member</p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-white/80 font-serif">Attend free workshops and speaker events</p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-white/80 font-serif">Participate in Startup Sprint weekend experience</p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-white/80 font-serif">Subscribe to our newsletter for updates</p>
-                </div>
-              </div>
+              
+          <NewsletterSignup
+            text="Sign up for our newsletter to get updates and announcements"
+            textClassName="text-white/90 text-2xl"
+            buttonClassName="text-[#12172F]"
+            inputClassName="text-white/90 outline-white border-white/10"
+          />
+
             </div>
 
             <div className="rounded-2xl border border-white/30 bg-white/5 backdrop-blur-sm p-8">

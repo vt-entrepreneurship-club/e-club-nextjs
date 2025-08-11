@@ -6,22 +6,23 @@ function page() {
 
     const TEAM = [
         
-            {
-              name: "Ebenezer Zergabachew",
-              image: "/team-photos/ebenezer.png",
-              title: "President",
-              linkedin: ""
-            },
+            
             {
               name: "Jeremiah Hohn",
               image: "/team-photos/jeremiah.png",
-              title: "Vice President",
+              title: "President",
               linkedin: ""
             },
             {
               name: "Nate Estrada",
               image: "/team-photos/nate.png",
-              title: "Marketing Director",
+              title: "Vice President",
+              linkedin: ""
+            },
+            {
+              name: "Ebenezer Zergabachew",
+              image: "/team-photos/ebenezer.png",
+              title: "Senior Advisor",
               linkedin: ""
             },
             {
@@ -65,13 +66,7 @@ function page() {
               image: "/team-photos/carter.png",
               title: "Tech and Innovation Coordinator",
               linkedin: ""
-            },
-            {
-              name: "Benjamin Smith",
-              image: "/team-photos/ben.png",
-              title: "Tech and Innovation Coordinator",
-              linkedin: ""
-            }      
+            },  
     ]
   return (
     <div className='min-h-screen bg-gradient-to-b from-gray-800 to-gray-900 py-16'>
@@ -87,9 +82,9 @@ function page() {
                         <h2 className='text-white text-xl font-semibold mr-auto mt-3'>{member.name}</h2>
                         <div className="flex items-center w-10/12 justify-between gap-2 mx-auto mt-3">
                             <p className='text-gray-400'>{member.title}</p>
-                            <a href={member.linkedin} target='_blank' rel='noopener noreferrer'>
+                            {/* <a href={member.linkedin} target='_blank' rel='noopener noreferrer'>
                                 <BsLinkedin className='text-white' />
-                            </a>
+                            </a> */}
                         </div>
                     </div>
                 ))}

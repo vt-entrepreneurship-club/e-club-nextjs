@@ -22,7 +22,7 @@ const aldrich = Aldrich({ subsets: ["latin"], weight: "400", variable: "--font-a
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" data-theme="dark">
+    <html lang="en" data-theme="dark" className="scroll-smooth">
       <CSPostHogProvider>
         <body className={`${inter.className} ${aldrich.variable}`}>
             <NavBar />
