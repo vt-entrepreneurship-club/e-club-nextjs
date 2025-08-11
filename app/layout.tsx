@@ -1,28 +1,34 @@
+"use client";
 import "./globals.css";
-import { Inter } from "next/font/google";
-import NavBar from "../components/NavBar";
+  import { Inter } from "next/font/google";
+  // import NavBar from "../components/NavBar";
 import { Analytics } from "@vercel/analytics/react";
 import { Footer } from "../components/Footer";
 import { CSPostHogProvider } from "./providers";
+import NavBar from "../components/NavBar";
+import { Aldrich } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
+const aldrich = Aldrich({ subsets: ["latin"], weight: "400", variable: "--font-aldrich", display: "swap" });
 
-export const metadata = {
-  title: "Entrepreneurship Club at Virginia Tech",
-  description:
-    "Where Entrepreneurship Becomes Community Right at the center of Virginia Tech's startup ecosystem, we bridge gaps between students, industry leaders, and startups that are building spectacular products.",
-  icons: {
-    icon: "./app/assets/logo.png",
-  },
-};
+// export const metadata = {
+//   title: "Entrepreneurship Club at Virginia Tech",
+//   description:
+//     "Where Entrepreneurship Becomes Community Right at the center of Virginia Tech's startup ecosystem, we bridge gaps between students, industry leaders, and startups that are building spectacular products.",
+//   icons: {
+//     icon: "./app/assets/logo.png",
+//   },
+// };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" data-theme="dark">
+    <html lang="en" data-theme="dark" className="scroll-smooth">
       <CSPostHogProvider>
-        <body className={`${inter.className}`}>
-          
-          <main className="">{children}</main>
+        <body className={`${inter.className} ${aldrich.variable}`}>
+            <NavBar />
+          <main className="min-h-screen">
+            {children}
+          </main>
           <Analytics />
           
         </body>
