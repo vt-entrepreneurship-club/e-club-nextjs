@@ -5,6 +5,7 @@ import { Smooch } from "next/font/google";
 import CountdownTimer from "@components/CountdownTimer";
 import whatWillYouBuild from "../../../public/what will you build.png";
 import NewsletterSignup from "@components/NewsletterSignup";
+import { RetroGrid } from "@components/magicui/retro-grid";
 
 const smooch = Smooch({ subsets: ["latin"], weight: "400", display: "swap" });
 
@@ -38,45 +39,64 @@ const faqs: { header: string; body: string }[] = [
 function page() {
   return (
     <div className="relative overflow-hidden min-h-screen bg-gradient-to-tr from-[#161732] via-slate-900 to-blue-950 text-white">
-      <main className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-24 space-y-24">
+      <main className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-20 space-y-24">
         {/* Hero */}
         <section className="relative text-center">
-          <div className="relative space-y-6">
-            <div className="relative">
+          {/* <div className="relative space-y-6">
               <Image
                 src={logo}
                 alt="Startup Sprint 25"
                 width={1000}
                 height={1000}
-                className="mx-auto w-[85%] max-w-3xl lg:relative lg:left-2 drop-shadow-[0_0_50px_rgba(56,189,248,0.25)]"
+                className="mx-auto w-[85%] max-w-3xl lg:relative lg:left-2 lg:top-40 drop-shadow-[0_0_50px_rgba(56,189,248,0.25)]"
               />
+          </div> */}
+
+          <div className="relative flex h-screen w-full flex-col items-center justify-center overf low-hidden">
+            <div className="relative top-20">
+            <Image
+                src={logo}
+                alt="Startup Sprint 25"
+                width={1000}
+                height={1000}
+                className="mx-auto w-[85%] max-w-3xl lg:relative lg:left-2 lg:bottom-30 drop-shadow-[0_0_50px_rgba(56,189,248,0.25)]"
+              />
+
+              <div className="relative bottom-30">
+
+                <CountdownTimer
+                  date={new Date("2025-09-25T21:00:00Z")}
+                  className="font-aldrich text-[#f33ed8] border-none relative"
+                />
+                <span className="font-aldrich text-sm">
+                  Thursday, September 25th - Monday, September 29th
+                </span>
+
+                <div className="mt-10 flex justify-center">
+                  <div
+                    className="ApexMk2-Bold tracking-wide px-10 py-4 md:py-5 text-base md:text-lg rounded-md border border-sky-500/30 bg-gradient-to-tr from-sky-500/10 to-transparent text-white/70 shadow-[0_0_30px_rgba(56,189,248,0.15)] transition-colors hover:from-pink-500/10 hover:border-pink-500/40 select-none"
+                    aria-disabled
+                  >
+                    Registration opens soon
+                  </div>
+                </div>
+
+                <div className="mt-12">
+                  <a
+                    href="#newsletter"
+                    className="text-white/70 text-sm decoration-white/20 hover:decoration-white/40"
+                  >
+                    <u>
+                      Sign up for our newsletter to get updates and announcements
+                    </u>
+                  </a>
+                </div>
+              </div>
+
+
             </div>
-          </div>
-
-
-          <CountdownTimer
-            date={new Date("2025-09-25T21:00:00Z")}
-            className="font-aldrich text-[#f33ed8] border-none relative"
-          />
-            <span className="font-aldrich text-sm">Thursday, September 25th - Monday, September 29th</span>
-
-          <div className="mt-10 flex justify-center">
-            <div
-              className="ApexMk2-Bold tracking-wide px-10 py-4 md:py-5 text-base md:text-lg rounded-md border border-sky-500/30 bg-gradient-to-tr from-sky-500/10 to-transparent text-white/70 shadow-[0_0_30px_rgba(56,189,248,0.15)] transition-colors hover:from-pink-500/10 hover:border-pink-500/40 select-none"
-              aria-disabled
-            >
-              Registration opens soon
+              <RetroGrid />
             </div>
-          </div>
-
-          <div className="mt-12">
-            <a
-              href="#newsletter"
-              className="text-white/70 text-sm decoration-white/20 hover:decoration-white/40"
-            >
-              <u>Sign up for our newsletter to get updates and announcements</u>
-            </a>
-          </div>
         </section>
 
         {/* What is it */}
@@ -121,8 +141,8 @@ function page() {
             </h1>
 
             <div className="mt-4 text-base sm:text-lg md:text-xl max-w-3xl text-gray-300">
-              Startup Sprint is an immersive competition where you where you'll be
-              challenged with turning your business concept into reality in
+              Startup Sprint is an immersive competition where you where you'll
+              be challenged with turning your business concept into reality in
               just 5 days.
               <br />
               <br />
@@ -211,18 +231,14 @@ function page() {
             ))}
           </div>
         </section>
-        
-        <div id="newsletter" className="mt-10 lg:w-1/2 mx-auto">
 
+        <div id="newsletter" className="mt-10 lg:w-1/2 mx-auto">
           <NewsletterSignup
             text="Get event updates and application reminders."
             textClassName="text-white/90 text-2xl"
             buttonClassName="text-[#12172F]"
           />
-
         </div>
-
-       
       </main>
     </div>
   );
