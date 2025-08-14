@@ -95,7 +95,8 @@ function page() {
 
 
             </div>
-              <RetroGrid />
+              <RetroGrid className="min-w-screen" />
+            
             </div>
         </section>
 
