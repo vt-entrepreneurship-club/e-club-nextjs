@@ -38,8 +38,8 @@ const faqs: { header: string; body: string }[] = [
 
 function page() {
   return (
-    <div className="relative overflow-hidden min-h-screen bg-gradient-to-tr from-[#161732] via-slate-900 to-blue-950 text-white">
-      <main className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-20 space-y-24">
+    <div className="relative overflow-hidden min-h-screen bg-gradient-to-tr from-[#161732] via-slate-900 to-blue-950 text-white pb-20">
+      <main className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 lg:py-20 space-y-24">
         {/* Hero */}
         <section className="relative text-center">
           {/* <div className="relative space-y-6">
@@ -53,16 +53,16 @@ function page() {
           </div> */}
 
           <div className="relative flex h-screen w-full flex-col items-center justify-center overf low-hidden">
-            <div className="relative top-20">
+            <div className="relative lg:top-20">
             <Image
                 src={logo}
                 alt="Startup Sprint 25"
                 width={1000}
                 height={1000}
-                className="mx-auto w-[85%] max-w-3xl lg:relative lg:left-2 lg:bottom-30 drop-shadow-[0_0_50px_rgba(56,189,248,0.25)]"
+                className="mx-auto lg:w-[85%] w-full max-w-3xl lg:relative lg:left-2 lg:bottom-30 drop-shadow-[0_0_50px_rgba(56,189,248,0.25)]"
               />
 
-              <div className="relative bottom-30">
+              <div className="relative lg:bottom-30">
 
                 <CountdownTimer
                   date={new Date("2025-09-25T21:00:00Z")}
@@ -100,7 +100,7 @@ function page() {
         </section>
 
         {/* What is it */}
-        <section className="grid md:grid-cols-5 gap-10 items-start mt-60">
+        <section className="grid md:grid-cols-5 gap-10 items-start lg:mt-60">
           <div className="md:col-span-2 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-1 gap-3">
             <div className="rounded-xl border border-sky-500/30 bg-gradient-to-tr from-sky-500/10 to-transparent p-4">
               <p className="text-xs uppercase tracking-wide text-sky-300/80">
