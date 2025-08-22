@@ -37,30 +37,55 @@ function  NewsletterSignup({
   };
 
   return (
-    <div className="mx-auto">
-      <div className={`my-6 text-xl text-[#2c5e9a] ${textClassName}`}>
-        {text}
-      </div>
-      <form onSubmit={handleSubmit} className="w-full">
-        <div className="mb-4">
+    <div className="form-control">
+      <form
+        action="https://vteclub.us8.list-manage.com/subscribe/post?u=5fa06e1fdfbb4ff1646ba3d2f&amp;id=1dea666573&amp;f_id=00c00fe0f0"
+        method="post"
+        id="mc-embedded-subscribe-form"
+        name="mc-embedded-subscribe-form"
+        className="validate form-control mt-6"
+        target="_blank"
+      >
+        <div id="mc_embed_signup_scroll">
+          <div className="mc-field-group">
+            <label htmlFor="mce-EMAIL">
+              {/* Email Address <span className="asterisk">*</span> */}
+            </label>
+            <input
+              type="email"
+              name="EMAIL"
+              className="required email input input-primary mt-4 w-full px-3 py-2"
+              id="mce-EMAIL"
+              required
+              placeholder="Email"
+            />
+            <span
+              id="mce-EMAIL-HELPERTEXT"
+              className="mt-1 block text-sm"
+            ></span>
+          </div>
+          <div id="mce-responses" className="clear">
+            <div className="response" id="mce-error-response"></div>
+            <div className="response" id="mce-success-response"></div>
+          </div>
+          <div
+            aria-hidden="true"
+            style={{ position: "absolute", left: "-5000px" }}
+          >
+            <input
+              type="text"
+              name="b_5fa06e1fdfbb4ff1646ba3d2f_1dea666573"
+              tabIndex={-1}
+            />
+          </div>
           <input
-            id="email"
-            type="email"
-            name="EMAIL"
-            required
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder="Enter your email"
-            className={`w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300 ${inputClassName}`}
+            type="submit"
+            name="subscribe"
+            id="mc-embedded-subscribe"
+            className="mt-4 bg-white w-full px-3 py-2 ApexMk2"
+            defaultValue="Subscribe"
           />
         </div>
-        {status === "error" && (
-          <div className="mb-4 text-sm text-red-600">{message}</div>
-        )}
-        {status === "success" && (
-          <div className="mb-4 text-sm text-green-600">{message}</div>
-        )}
-        <Button className={`mt-4 w-full ${buttonClassName}`}>Subscribe</Button>
       </form>
     </div>
   );
