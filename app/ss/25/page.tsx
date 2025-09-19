@@ -69,7 +69,7 @@ function page() {
                   className="font-aldrich text-[#f33ed8] border-none relative"
                 />
                 <span className="font-aldrich text-sm">
-                  Thursday, September 25th - Monday, September 29th
+                  Thursday, September 25th - Tuesday, September 30th
                 </span>
 
                 <a href="https://tally.so/r/wQGA87" target="_blank" className="mt-10 flex justify-center">
