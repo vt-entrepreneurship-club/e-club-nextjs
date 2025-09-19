@@ -23,6 +23,9 @@ const aldrich = Aldrich({ subsets: ["latin"], weight: "400", variable: "--font-a
 export default function RootLayout({ children }) {
   return (
     <html lang="en" data-theme="dark" className="scroll-smooth">
+      <head>
+      <script async src="https://tally.so/widgets/embed.js"></script>
+      </head>
       <CSPostHogProvider>
         <body className={`${inter.className} ${aldrich.variable}`}>
             <NavBar />

@@ -14,8 +14,6 @@ import NavBar from "../components/NavBar";
 export default function Home() {
   const [isScrolled, setIsScrolled] = useState(false);
 
-
-  
   useEffect(() => {
     const handleScroll = () => {
       const heroSection = document.getElementById("hero-section");
@@ -41,12 +39,8 @@ export default function Home() {
     <main
       className={`min-h-screen overflow-hidden font-serif transition-colors duration-500 pb-[300px] z-[0]`}
     >
-
-      
       {/* Animated Background Image */}
-      <div
-        className="fixed inset-0 z-0 overflow-hidden bg-gradient-to-b from-blue-200 to-[#61A6FB] transition-opacity duration-100"
-      >
+      <div className="fixed inset-0 z-0 overflow-hidden bg-gradient-to-b from-blue-200 to-[#61A6FB] transition-opacity duration-100">
         <div className="animate-panorama h-full">
           <Image
             src={clouds}
@@ -68,7 +62,6 @@ export default function Home() {
       </div>
 
       {/* <NavBar /> */}
-
 
       {/* Main Content */}
       <div
@@ -109,11 +102,19 @@ export default function Home() {
 
           {/* Social Media Buttons */}
           <div className="flex justify-center space-x-4 mt-6">
-            <a href="https://www.instagram.com/eclub.vt/" target="_blank" className="backdrop-blur-md p-4 bg-[#2f72be]/40 hover:bg-[#2f72be]/80 text-white">
+            <a
+              href="https://www.instagram.com/eclub.vt/"
+              target="_blank"
+              className="backdrop-blur-md p-4 bg-[#2f72be]/40 hover:bg-[#2f72be]/80 text-white"
+            >
               <Instagram className="h-5 w-5" />
               <span className="sr-only">Instagram</span>
             </a>
-            <a href="https://www.linkedin.com/company/vteclub/" target="_blank" className="backdrop-blur-md p-4 bg-[#2f72be]/40 hover:bg-[#2f72be]/80 text-white">
+            <a
+              href="https://www.linkedin.com/company/vteclub/"
+              target="_blank"
+              className="backdrop-blur-md p-4 bg-[#2f72be]/40 hover:bg-[#2f72be]/80 text-white"
+            >
               <Linkedin className="h-5 w-5" />
               <span className="sr-only">LinkedIn</span>
             </a>
@@ -146,21 +147,28 @@ export default function Home() {
                 <span>💰</span>
                 <div>
                   <div className="ApexMk2-Bold">$9,000+</div>
-                  <div className="text-xl opacity-80">Provided to student entrepreneurs</div>
+                  <div className="text-xl opacity-80">
+                    Provided to student entrepreneurs
+                  </div>
                 </div>
               </li>
               <li className="flex items-center gap-2">
                 <span>🚀</span>
                 <div>
                   <div className="ApexMk2-Bold">50+</div>
-                  <div className="text-xl opacity-80">Concepts built into products</div>
+                  <div className="text-xl opacity-80">
+                    Concepts built into products
+                  </div>
                 </div>
               </li>
               <li className="flex items-center gap-2">
                 <span>🎯</span>
                 <div>
                   <div className="ApexMk2-Bold ">7+</div>
-                  <div className="text-xl opacity-80">Startups that have raised capital, exited, or are currently generating revenue.</div>
+                  <div className="text-xl opacity-80">
+                    Startups that have raised capital, exited, or are currently
+                    generating revenue.
+                  </div>
                 </div>
               </li>
             </ul>
@@ -190,14 +198,27 @@ export default function Home() {
           </p>
         </Card>
 
-        <Card className="col-span-1">
-          <h1 className="text-[#2c5e9a] ApexMk2-Bold text-2xl">Join Us</h1>
-          <NewsletterSignup />
+        <Card>
+          <h2 className="text-[#2c5e9a] ApexMk2-Bold text-2xl">
+            Become a Member
+          </h2>
+          <div className="flex flex-col items-center justify-center h-full w-full space-y-4">
+            <div className="text-lg mb-10  text-[#2c5e9a] font-light px-2">
+              Become a member of the Entrepreneurship Club and unlock exclusive
+              access to events, resources, and a vibrant community of
+              innovators.
+            </div>
+            <button
+              className="cursor-pointer bg-white px-3 py-2 ApexMk2 w-full max-w-xs"
+              data-tally-open="nGZL5Z"
+              data-tally-emoji-text="👋"
+              data-tally-emoji-animation="wave"
+            >
+              Join Us
+            </button>
+          </div>
         </Card>
-
-       
       </div>
-
     </main>
   );
 }
