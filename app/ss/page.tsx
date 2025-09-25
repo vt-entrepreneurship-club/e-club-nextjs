@@ -75,6 +75,14 @@ export default function StartupSprint24Page() {
 
           <a
             target="_blank"
+            href="https://eclubvt.notion.site/Startup-Sprint-2025-Participant-Hub-274d90daaa01808fa6c8cf66981ca038"
+            className="block text-center font-bold rounded border border-grey-200 py-2 px-4 w-[100%] hover:bg-gray-400 hover:text-black mt-4"
+          >
+            Participant Hub
+          </a>
+
+          <a
+            target="_blank"
             href={"../../../Startup Sprint Submission.pdf"}
             className="block text-center font-bold rounded border border-red-600 py-2 px-4 w-[100%] hover:bg-red-700 hover:text-white mt-4"
           >

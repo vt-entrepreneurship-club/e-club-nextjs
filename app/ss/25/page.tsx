@@ -80,6 +80,14 @@ function page() {
                     Register
                   </div>
                 </a>
+                <a href="https://eclubvt.notion.site/Startup-Sprint-2025-Participant-Hub-274d90daaa01808fa6c8cf66981ca038" target="_blank" className="mt-10 flex justify-center">
+                  <div
+                    className="ApexMk2-Bold backdrop-blur-sm tracking-wide px-10 py-4 md:py-5 text-base md:text-lg rounded-md border border-sky-500/30 bg-gradient-to-tr from-sky-500/10 to-transparent text-white/70 shadow-[0_0_30px_rgba(56,189,248,0.15)] transition-colors hover:from-pink-500/10 hover:border-pink-500/40 select-none z-[9999]"
+                    // aria-disabled
+                  >
+                    Participant Hub
+                  </div>
+                </a>
 
                 
               </div>
