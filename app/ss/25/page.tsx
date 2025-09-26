@@ -64,10 +64,8 @@ function page() {
 
               <div className="relative lg:bottom-30">
 
-                <CountdownTimer
-                  date={new Date("2025-09-25T21:00:00Z")}
-                  className="font-aldrich text-[#f33ed8] border-none relative"
-                />
+                <div className="flex justify-center text-pink-400">You can still participate!</div>
+                
                 <span className="font-aldrich text-sm">
                   Thursday, September 25th - Tuesday, September 30th
                 </span>
