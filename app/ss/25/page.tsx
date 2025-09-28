@@ -64,8 +64,8 @@ function page() {
 
               <div className="relative lg:bottom-30">
 
-                <div className="flex justify-center text-pink-400">You can still participate!</div>
-                <CountdownTimer date={new Date("2025-09-29T08:00:00-04:00")} finishedMessage="Submissions Closed" />
+                <div className="flex text-lg justify-center text-pink-400">Submissions Due Monday 8am</div>
+                <CountdownTimer className="border-0 my-5" date={new Date("2025-09-29T08:00:00-04:00")} finishedMessage="Submissions Closed" />
                 
                 <span className="font-aldrich text-sm">
                   Thursday, September 25th - Tuesday, September 30th
