@@ -5,9 +5,10 @@ import React, { useState, useEffect } from "react";
 type CountdownTimerProps = {
   date: Date | string;
   className?: string;
+  finishedMessage?: string;
 };
 
-const CountdownTimer = ({ date, className = "" }: CountdownTimerProps) => {
+const CountdownTimer = ({ date, className = "", finishedMessage = "Event Over" }: CountdownTimerProps) => {
   const [timeLeft, setTimeLeft] = useState<{
     days: number;
     hours: number;
@@ -52,7 +53,7 @@ const CountdownTimer = ({ date, className = "" }: CountdownTimerProps) => {
     return (
       <div className={`text-center mt-4 rounded-lg border bg-base-200 p-4 lg:w-fit mx-auto ${className}`}>
         <div className="mx-auto w-fit">
-          <span className="text-lg mx-2 font-bold">Event Over</span>
+          <span className="text-lg mx-2 font-bold">{finishedMessage}</span>
         </div>
       </div>
     );

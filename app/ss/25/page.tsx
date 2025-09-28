@@ -52,8 +52,8 @@ function page() {
               />
           </div> */}
 
-          <div className="relative flex h-screen w-full flex-col items-center justify-center overf low-hidden">
-            <div className="relative lg:top-20">
+          <div className="relative flex h-screen w-full flex-col items-center justify-center overflow-hidden">
+            <div className="relative lg:top-20"></div>
             <Image
                 src={logo}
                 alt="Startup Sprint 25"
@@ -65,23 +65,22 @@ function page() {
               <div className="relative lg:bottom-30">
 
                 <div className="flex justify-center text-pink-400">You can still participate!</div>
+                <CountdownTimer date={new Date("2025-09-29T08:00:00-04:00")} finishedMessage="Submissions Closed" />
                 
                 <span className="font-aldrich text-sm">
                   Thursday, September 25th - Tuesday, September 30th
                 </span>
 
-                <a href="https://tally.so/r/wQGA87" target="_blank" className="mt-10 flex justify-center">
+                <a href="https://tally.so/r/3NkvQl" target="_blank" className="mt-10 flex justify-center">
                   <div
-                    className="ApexMk2-Bold backdrop-blur-sm tracking-wide px-10 py-4 md:py-5 text-base md:text-lg rounded-md border border-sky-500/30 bg-gradient-to-tr from-sky-500/10 to-transparent text-white/70 shadow-[0_0_30px_rgba(56,189,248,0.15)] transition-colors hover:from-pink-500/10 hover:border-pink-500/40 select-none z-[9999]"
-                    // aria-disabled
+                    className="ApexMk2-Bold backdrop-blur-sm tracking-wide px-10 py-4 md:py-5 text-base md:text-lg rounded-md border border-[#EA2E76] bg-gradient-to-br from-[#EA2E76]/10 via-transparent to-transparent text-white/80 shadow-[0_0_30px_rgba(234,46,118,0.15)] transition-colors duration-200 hover:text-white/90 hover:from-[#EA2E76]/20 hover:shadow-[0_0_40px_rgba(234,46,118,0.25)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#EA2E76]/60 select-none z-[9999]"
                   >
-                    Register
+                    Submit Project
                   </div>
                 </a>
                 <a href="https://eclubvt.notion.site/Startup-Sprint-2025-Participant-Hub-274d90daaa01808fa6c8cf66981ca038" target="_blank" className="mt-10 flex justify-center">
                   <div
                     className="ApexMk2-Bold backdrop-blur-sm tracking-wide px-10 py-4 md:py-5 text-base md:text-lg rounded-md border border-sky-500/30 bg-gradient-to-tr from-sky-500/10 to-transparent text-white/70 shadow-[0_0_30px_rgba(56,189,248,0.15)] transition-colors hover:from-pink-500/10 hover:border-pink-500/40 select-none z-[9999]"
-                    // aria-disabled
                   >
                     Participant Hub
                   </div>
@@ -92,9 +91,7 @@ function page() {
 
 
             </div>
-              <RetroGrid className="min-w-screen" />
-            
-            </div>
+            <RetroGrid className="min-w-screen" />
         </section>
 
         {/* What is it */}
@@ -200,7 +197,7 @@ function page() {
             <Image
               src={whatWillYouBuild}
               alt="What will you build?"
-              className="lg:w-1/2 rel ative top-50 right-30"
+              className="lg:w-1/2 relative top-50 right-30"
             />
           </div>
         </section>
