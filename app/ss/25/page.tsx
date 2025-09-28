@@ -52,7 +52,7 @@ function page() {
               />
           </div> */}
 
-          <div className="relative flex h-screen w-full flex-col items-center justify-center overflow-hidden">
+          <div className="relative flex h-screen w-full flex-col items-center justify-center overflow-hidden pt-20">
             <div className="relative lg:top-20"></div>
             <Image
                 src={logo}
@@ -64,7 +64,7 @@ function page() {
 
               <div className="relative lg:bottom-30">
 
-                <div className="flex text-lg justify-center text-pink-400">Submissions Due Monday 8am</div>
+                <div className="flex text-lg mt-4 justify-center text-pink-400">Submissions Due Monday 8am</div>
                 <CountdownTimer className="border-0 my-5" date={new Date("2025-09-29T08:00:00-04:00")} finishedMessage="Submissions Closed" />
                 
                 <span className="font-aldrich text-sm">
