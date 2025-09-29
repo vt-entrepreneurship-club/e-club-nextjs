@@ -64,20 +64,20 @@ function page() {
 
               <div className="relative lg:bottom-30">
 
-                <div className="flex text-lg mt-4 justify-center text-pink-400">Submissions Due Monday 8am</div>
+                {/* <div className="flex text-lg mt-4 justify-center text-pink-400">Submissions Due Monday 8am</div> */}
                 <CountdownTimer className="border-0 my-5" date={new Date("2025-09-29T08:00:00-04:00")} finishedMessage="Submissions Closed" />
                 
                 <span className="font-aldrich text-sm">
                   Thursday, September 25th - Tuesday, September 30th
                 </span>
 
-                <a href="https://tally.so/r/3NkvQl" target="_blank" className="mt-10 flex justify-center">
+                {/* <a href="https://tally.so/r/3NkvQl" target="_blank" className="mt-10 flex justify-center">
                   <div
                     className="ApexMk2-Bold backdrop-blur-sm tracking-wide px-10 py-4 md:py-5 text-base md:text-lg rounded-md border border-[#EA2E76] bg-gradient-to-br from-[#EA2E76]/10 via-transparent to-transparent text-white/80 shadow-[0_0_30px_rgba(234,46,118,0.15)] transition-colors duration-200 hover:text-white/90 hover:from-[#EA2E76]/20 hover:shadow-[0_0_40px_rgba(234,46,118,0.25)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#EA2E76]/60 select-none z-[9999]"
                   >
                     Submit Project
                   </div>
-                </a>
+                </a> */}
                 <a href="https://eclubvt.notion.site/Startup-Sprint-2025-Participant-Hub-274d90daaa01808fa6c8cf66981ca038" target="_blank" className="mt-10 flex justify-center">
                   <div
                     className="ApexMk2-Bold backdrop-blur-sm tracking-wide px-10 py-4 md:py-5 text-base md:text-lg rounded-md border border-sky-500/30 bg-gradient-to-tr from-sky-500/10 to-transparent text-white/70 shadow-[0_0_30px_rgba(56,189,248,0.15)] transition-colors hover:from-pink-500/10 hover:border-pink-500/40 select-none z-[9999]"
